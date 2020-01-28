@@ -25,10 +25,8 @@
 
 .email {
   background-color: #FFFFFF;
-  justify-content: start;
-  align-items: end;
-  padding-left:5%;
-  padding-bottom:7px;
+  justify-content: right;
+  align-self: flex-end;
 }
 
 ul {
@@ -145,6 +143,9 @@ a:hover, a:active, a:focus {
   .header {
   }
   .email {
+  padding-left:5%;
+  justify-content: left;
+  align-items: end;
   }
   .menu a {
   font-size:14px;
@@ -167,6 +168,9 @@ a:hover, a:active, a:focus {
   .header {
   }
   .email {
+  padding-left:5%;
+  justify-content: left;
+  align-items: end;
   }
   .menu a {
   font-size:16px;
