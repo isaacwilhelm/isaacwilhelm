@@ -93,6 +93,12 @@ a:hover, a:active, a:focus {
   height: 1px;
 }
 
+.space-1 {
+  background-color: #FFFFFF;
+  padding-left:5%;
+  height: 30px;
+}
+
 .line-2 {
   background-color: LightGray;
   padding-left:5%;
