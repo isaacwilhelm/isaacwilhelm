@@ -87,6 +87,12 @@ a:hover, a:active, a:focus {
   color: white;
 }
 
+.space-2 {
+  background-color: #FFFFFF;
+  padding-left:5%;
+  height: 20px;
+}
+
 .line-1 {
   background-color: LightGray;
   padding-left:5%;
@@ -96,7 +102,7 @@ a:hover, a:active, a:focus {
 .space-1 {
   background-color: #FFFFFF;
   padding-left:5%;
-  height: 30px;
+  height: 20px;
 }
 
 .line-2 {
@@ -108,7 +114,6 @@ a:hover, a:active, a:focus {
 .picture {
   background-color: #FFFFFF;
   padding-left:5%;
-  height:275px;
 }
 
 .description {
@@ -142,6 +147,7 @@ a:hover, a:active, a:focus {
 .listing {
   background-color: #FFFFFF;
   padding-left:8%;
+  padding-right: 5%;
 }
 
 /* Mobile Styles */
@@ -159,10 +165,17 @@ a:hover, a:active, a:focus {
   padding-left: 6px;
   padding-right: 6px;
 }
+  .space-2 {
+  height: 0px;
+  }
+  .line-1 {
+  }
+  .space-1 {
+  }
   .picture {
     align-items: center;
     justify-content: center;
-    padding-bottom:30px;
+    padding-bottom:20px;
   }
   .description {
     padding-bottom:30px;
@@ -184,10 +197,14 @@ a:hover, a:active, a:focus {
   padding-left: 8px;
   padding-right: 8px;
 }
+  .space-1 {
+  }
+  .line-1 {
+  }
   .picture {
-    height: 260px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
   }
   .description {
     padding-bottom:30px;
@@ -198,13 +215,14 @@ a:hover, a:active, a:focus {
 @media only screen and (min-width: 650px) and (max-width: 960px) {
   .header,
   .email {
-    width: 50%;
+    width: 40%;
+  }
+  .space-1 {
   }
   .picture,
   .description {
-    padding-top: 30px;
     padding-bottom:30px;
-    width: 38%;
+    width: 300px;
   }
 }
 
@@ -220,13 +238,15 @@ a:hover, a:active, a:focus {
   }
   .menu {
   }
+  .space-1 {
+  }
   .line-1 {
   }
   .picture,
   .description {
     padding-top: 30px;
     width: 30%;
-    height: 320px;
+    height: 300px;
   }
   .headerp {
   }
