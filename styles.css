@@ -33,7 +33,6 @@ ul {
   font-family: Times New Roman, serif;
   color: black;
   font-size:16px;
-  padding-top:3px;
 }
 
 ul.b {
@@ -44,6 +43,7 @@ ul.b {
 li {
   font-family: Times New Roman, serif;
   font-size:16px;
+  margin-top:3px;
 }
 
 a {
