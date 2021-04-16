@@ -89,6 +89,59 @@ a:hover, a:active, a:focus {
   color: white;
 }
 
+/* Style the dropdown button (so it looks like other menu buttons)*/
+.dropdown .dropdown-btn {
+  font-size:16px;
+  font-family: Times New Roman, serif;
+  text-align:center;
+  height: 40px;
+  display: flex;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+/* On mouse-over */
+.dropdown-btn:hover {
+  background-color: #be5100;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 50px;
+  max-height: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size:14px;
+  font-family: Times New Roman, serif;
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #be5100;
+  color: white;
+}
+
+/* Displays the dropdown menu itself */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .space-2 {
   background-color: #FFFFFF;
   padding-left:5%;
@@ -152,151 +205,131 @@ a:hover, a:active, a:focus {
   padding-right: 5%;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  .header {
-  }
+
   .email {
   padding-left:5%;
   justify-content: left;
   align-items: end;
   }
+
   .menu a {
-  font-size:14px;
-  height: 25px;
-  padding-left: 6px;
-  padding-right: 6px;
-}
+    font-size:14px;
+    height: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
   .space-2 {
-  height: 0px;
+    height: 0px;
   }
-  .line-1 {
-  }
-  .space-1 {
-  }
+
   .picture {
     align-items: center;
     justify-content: center;
     padding-bottom:20px;
   }
+
   .description {
     padding-bottom:30px;
   }
+
 }
+
+
+
 
 /* Tablet Style 1 */
 @media only screen and (min-width: 401px) and (max-width: 649px) {
-  .header {
-  }
+
   .email {
-  padding-left:5%;
-  justify-content: left;
-  align-items: end;
+    padding-left:5%;
+    justify-content: left;
+    align-items: end;
   }
+
   .menu a {
-  font-size:16px;
-  height: 35px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-  .space-1 {
+    padding-left: 8px;
+    padding-right: 8px;
   }
-  .line-1 {
+
+  /* Style the dropdown button */
+  .dropdown .dropdown-btn {
+    padding-left: 8px;
+    padding-right: 8px;
   }
+
+  /* Style the dropdown menu */
+  .dropdown-content {
+    min-width: 80px;
+    max-width: 150px;
+  }
+
+  /* Style the text in the dropdown menu */
+  .dropdown-content a {
+    font-size:13px;
+  }
+
   .picture {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
   }
+
   .description {
     padding-bottom:30px;
   }
+
 }
+
+
+
+
+
 
 /* Tablet Style 2 */
 @media only screen and (min-width: 650px) and (max-width: 960px) {
+
   .header,
   .email {
     width: 40%;
   }
-  .space-1 {
-  }
+
   .picture,
   .description {
     padding-bottom:30px;
     width: 300px;
   }
+
 }
+
+
+
+
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+
   .page {
     width: 960px;
     margin: 0 auto;
   }
+
   .header,
   .email {
     width: 50%;
   }
-  .menu {
-  }
-  .space-1 {
-  }
-  .line-1 {
-  }
+
   .picture,
   .description {
     width: 30%;
     height: 300px;
   }
-  .headerp {
-  }
-  .listing {
-  }
+
 }
