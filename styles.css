@@ -322,6 +322,12 @@ a:hover, a:active, a:focus {
     padding-bottom:30px;
     width: 300px;
   }
+  
+  .picture2,
+  .description {
+    padding-bottom:30px;
+    width: 300px;
+  }
 
 }
 
@@ -351,7 +357,7 @@ a:hover, a:active, a:focus {
   
   .picture2,
   .description {
-    width: 40%;
+    width: 35%;
     height: 300px;
   }
 
