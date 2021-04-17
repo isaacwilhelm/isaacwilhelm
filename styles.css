@@ -243,13 +243,14 @@ a:hover, a:active, a:focus {
   .picture2 {
     align-items: center;
     justify-content: center;
+  }
+
     <div class='section space-1'>
     </div>
     <div class='section line-2'>
     </div>
     <div class='section space-1'>
     </div>
-  }
 
   .description {
     padding-bottom:30px;
@@ -300,13 +301,14 @@ a:hover, a:active, a:focus {
   .picture2 {
     align-items: center;
     justify-content: center;
+  }
+
     <div class='section space-1'>
     </div>
     <div class='section line-2'>
     </div>
     <div class='section space-1'>
     </div>
-  }
 
   .description {
     padding-bottom:30px;
@@ -336,13 +338,14 @@ a:hover, a:active, a:focus {
   .picture2 {
     align-items: center;
     justify-content: center;
+  }
+
     <div class='section space-1'>
     </div>
     <div class='section line-2'>
     </div>
     <div class='section space-1'>
     </div>
-  }
 
 }
 
