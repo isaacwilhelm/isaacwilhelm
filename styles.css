@@ -154,12 +154,6 @@ a:hover, a:active, a:focus {
   height: 1px;
 }
 
-.space-0 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: 10px;
-}
-
 .space-1 {
   background-color: #FFFFFF;
   padding-left:5%;
@@ -169,7 +163,7 @@ a:hover, a:active, a:focus {
 .space-3 {
   background-color: #FFFFFF;
   padding-left:5%;
-  height: 20px;
+  height: 10px;
 }
 
 .line-2 {
