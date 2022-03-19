@@ -2,6 +2,10 @@
  --emailaddress: "iwilhelm@nus.edu.sg"; 
 }
 
+#insert:after{
+  content: var(--emailaddress);
+}
+
 * {
   margin: 0;
   padding: 0;
