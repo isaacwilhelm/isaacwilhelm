@@ -1,3 +1,7 @@
+:root {
+ --emailaddress: "iwilhelm@nus.edu.sg"; 
+}
+
 * {
   margin: 0;
   padding: 0;
