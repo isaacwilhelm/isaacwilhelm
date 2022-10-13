@@ -385,13 +385,13 @@ a:hover, a:active, a:focus {
   .picture,
   .description {
     width: 30%;
-    height: 300px;
+    height: 290px;
   }
   
   .picture2,
   .description {
     width: 35%;
-    height: 300px;
+    height: 290px;
   } 
 
 }
