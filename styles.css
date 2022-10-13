@@ -379,13 +379,20 @@ a:hover, a:active, a:focus {
   .picture,
   .description {
     width: 30%;
-    height: 600px;
+    height: 300px;
   }
   
   .picture2,
   .description {
     width: 35%;
-    height: 600px;
+    height: 300px;
   }
+
+   .picture3,
+  .description {
+    width: 30%;
+    height: 700px;
+  }
+ 
 
 }
