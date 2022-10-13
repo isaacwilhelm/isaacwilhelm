@@ -394,13 +394,6 @@ a:hover, a:active, a:focus {
   .description {
     width: 35%;
     height: 300px;
-  }
-
-   .picture3,
-  .description {
-    width: 30%;
-    height: 700px;
-  }
- 
+  } 
 
 }
