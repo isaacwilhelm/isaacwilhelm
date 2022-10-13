@@ -237,6 +237,14 @@ a:hover, a:active, a:focus {
   padding-right: 5%;
 }
 
+.buttonreveal {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  background-color: #FFFFFF;
+  padding-left:8%;
+  padding-right: 5%;
+}
 
 
 
