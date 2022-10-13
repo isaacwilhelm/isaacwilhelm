@@ -150,12 +150,6 @@ a:hover, a:active, a:focus {
   display: block;
 }
 
-.space-2 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: 20px;
-}
-
 .line-1 {
   background-color: LightGray;
   padding-left:5%;
@@ -169,6 +163,12 @@ a:hover, a:active, a:focus {
 }
 
 .space-1 {
+  background-color: #FFFFFF;
+  padding-left:5%;
+  height: 20px;
+}
+
+.space-2 {
   background-color: #FFFFFF;
   padding-left:5%;
   height: 20px;
@@ -242,8 +242,6 @@ a:hover, a:active, a:focus {
   display: flex;
   justify-content: left;
   background-color: #FFFFFF;
-  padding-left:8%;
-  padding-right: 5%;
 }
 
 
