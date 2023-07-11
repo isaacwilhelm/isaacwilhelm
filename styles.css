@@ -221,9 +221,8 @@ a:hover, a:active, a:focus {
 }
 
 .descriptionbooks {
-  padding-left: 5%;
   padding-right: 5%;
-  background-color: #c40808;
+  background-color: #FFFFFF;
   flex: 2;
 }
 
@@ -320,10 +319,6 @@ a:hover, a:active, a:focus {
     padding-bottom:30px;
   }
 
-  .descriptionbooks {
-    padding-bottom:30px;
-  }
-
 }
 
 
@@ -383,7 +378,7 @@ a:hover, a:active, a:focus {
   }
 
   .descriptionbooks {
-    padding-bottom:30px;
+    padding-bottom:20px;
   }
 
 }
