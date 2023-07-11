@@ -215,18 +215,6 @@ a:hover, a:active, a:focus {
   flex: 2;
 }
 
-
-.bookimage {
-    flex: 1;
-    ...
-}
-
-.bookdescription {
-    flex: 0 1 750px;
-    ...
-}
-
-
 .descriptionbooks {
   padding-left: 5%;
   padding-right: 5%;
