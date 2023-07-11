@@ -370,13 +370,13 @@ a:hover, a:active, a:focus {
     padding-bottom: 30px;
   }
 
-   .picturebooks {
-    align-items: center;
-    justify-content: center;
-  }
-
   .description {
     padding-bottom:30px;
+  }
+
+  .picturebooks {
+    align-items: center;
+    justify-content: center;
   }
 
   .descriptionbooks {
@@ -408,6 +408,17 @@ a:hover, a:active, a:focus {
     align-items: center;
     justify-content: center;
     padding-bottom:30px;
+  }
+
+  .picturebooks {
+    background-color: #FFFFFF;
+    padding-left:5%;
+  }
+
+  .descriptionbooks {
+    padding-right: 5%;
+    background-color: #FFFFFF;
+    flex: 2;
   }
 
 }
