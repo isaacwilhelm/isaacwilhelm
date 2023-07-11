@@ -312,7 +312,6 @@ a:hover, a:active, a:focus {
  .picturebooks {
     align-items: center;
     justify-content: center;
-    paddingbottom: 30px;
 }
 
   .description {
@@ -374,7 +373,6 @@ a:hover, a:active, a:focus {
    .picturebooks {
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
   }
 
   .description {
@@ -415,7 +413,6 @@ a:hover, a:active, a:focus {
    .picturebooks {
     align-items: center;
     justify-content: center;
-    padding-bottom:30px;
   }
 
    .descriptionbooks {
