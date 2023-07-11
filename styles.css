@@ -209,16 +209,27 @@ a:hover, a:active, a:focus {
 }
 
 .description {
-  padding-left:5%;
+  padding-left: 5%;
   padding-right: 5%;
   background-color: #FFFFFF;
   flex: 2;
 }
 
+
+.bookimage {
+    flex: 1;
+    ...
+}
+
+.bookdescription {
+    flex: 0 1 750px;
+    ...
+}
+
+
 .descriptionbooks {
-  padding-left:5%;
+  padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: -5%;
   background-color: #FFFFFF;
   flex: 2;
 }
