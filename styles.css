@@ -320,6 +320,10 @@ a:hover, a:active, a:focus {
     padding-bottom:30px;
   }
 
+  .descriptionbooks {
+    padding-bottom:30px;
+  }
+
 }
 
 
@@ -377,7 +381,11 @@ a:hover, a:active, a:focus {
   .description {
     padding-bottom:30px;
   }
- 
+
+  .descriptionbooks {
+    padding-bottom:30px;
+  }
+
 }
 
 
