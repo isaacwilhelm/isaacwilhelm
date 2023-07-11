@@ -180,6 +180,12 @@ a:hover, a:active, a:focus {
   height: 10px;
 }
 
+.lessspace-1 {
+  background-color: #FFFFFF;
+  padding-left:5%;
+  height: -10px;
+}
+
 .line-2 {
   background-color: LightGray;
   padding-left:5%;
