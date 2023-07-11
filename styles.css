@@ -308,7 +308,12 @@ a:hover, a:active, a:focus {
   .description {
     padding-bottom:30px;
   }
- 
+
+.descriptionbooks {
+  align-items: center;
+  justify-content: center;
+  }
+
 }
 
 
@@ -359,6 +364,12 @@ a:hover, a:active, a:focus {
   
   .description {
     padding-bottom:30px;
+  }
+ 
+ .descriptionbooks {
+  align-items: center;
+  justify-content: center;
+  padding-bottom:30px;
   }
 
 }
