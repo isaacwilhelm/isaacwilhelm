@@ -206,6 +206,7 @@ a:hover, a:active, a:focus {
   padding-left:5%;
   padding-right: 5%;
   background-color: #FFFFFF;
+  flex: 2;
 }
 
 .descriptionbooks {
