@@ -443,8 +443,7 @@ a:hover, a:active, a:focus {
     height: 290px;
   }
 
-  .picturebooks,
-  .description {
+  .picturebooks {
     width: 20%;
     height: 225px;
   }
