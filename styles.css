@@ -208,6 +208,11 @@ a:hover, a:active, a:focus {
   padding-left:5%;
 }
 
+.picturebooks {
+  background-color: #FFFFFF;
+  padding-left:5%;
+}
+
 .description {
   padding-left: 5%;
   padding-right: 5%;
@@ -304,7 +309,13 @@ a:hover, a:active, a:focus {
     justify-content: center;
     paddingbottom: 30px;
   }
- 
+
+ .picturebooks {
+    align-items: center;
+    justify-content: center;
+    paddingbottom: 30px;
+}
+
   .description {
     padding-bottom:30px;
   }
@@ -356,7 +367,13 @@ a:hover, a:active, a:focus {
     justify-content: center;
     padding-bottom: 30px;
   }
-  
+
+   .picturebooks {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
   .description {
     padding-bottom:30px;
   }
@@ -383,6 +400,12 @@ a:hover, a:active, a:focus {
   }
   
   .picture2 {
+    align-items: center;
+    justify-content: center;
+    padding-bottom:30px;
+  }
+
+   .picturebooks {
     align-items: center;
     justify-content: center;
     padding-bottom:30px;
@@ -418,6 +441,11 @@ a:hover, a:active, a:focus {
   .description {
     width: 35%;
     height: 290px;
+  }
+
+  .picturebooks {
+    width: 20%;
+    height: 225px;
   }
 
 }
