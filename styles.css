@@ -180,6 +180,12 @@ a:hover, a:active, a:focus {
   height: 10px;
 }
 
+.space-4 {
+  background-color: #FFFFFF;
+  padding-left:5%;
+  height: 5px;
+}
+
 .lessspace-1 {
   background-color: #FFFFFF;
   padding-left:5%;
@@ -210,11 +216,11 @@ a:hover, a:active, a:focus {
 }
 
 .descriptionbooks {
-  padding-left: 5%;
+  padding-left:5%;
   padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: -5%;
   background-color: #FFFFFF;
+  flex: 2;
 }
 
 .description2 {
