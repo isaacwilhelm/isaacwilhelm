@@ -413,12 +413,13 @@ a:hover, a:active, a:focus {
   }
 
   .picturebooks {
-    padding-left:5%;
+    align-items: center;
+    justify-content: center;
   }
 
   .descriptionbooks {
-    padding-left: 5%;
-    flex: 2;
+    padding-left:5%;
+    padding-bottom:10px;
   }
 
 }
