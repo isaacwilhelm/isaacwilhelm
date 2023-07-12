@@ -280,9 +280,10 @@ a:hover, a:active, a:focus {
 /* Test Categories for Experimenting */
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  padding-left:5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 
