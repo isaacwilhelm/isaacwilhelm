@@ -413,13 +413,11 @@ a:hover, a:active, a:focus {
   }
 
   .picturebooks {
-    background-color: #FFFFFF;
     padding-left:5%;
   }
 
   .descriptionbooks {
-    padding-right: 5%;
-    background-color: #FFFFFF;
+    padding-left: 5%;
     flex: 2;
   }
 
