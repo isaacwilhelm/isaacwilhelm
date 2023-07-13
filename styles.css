@@ -295,7 +295,6 @@ a:hover, a:active, a:focus {
 
 .flex-container-header {
   display:flex;
-  height:90px;
   flex-wrap:wrap;
 }
 
@@ -303,6 +302,7 @@ a:hover, a:active, a:focus {
   flex-grow:2;
    background:green;
    padding-top:40px;
+   padding-bottom:16px;
    padding-left:20%
 }
 
@@ -310,6 +310,7 @@ a:hover, a:active, a:focus {
   background:blue;
   padding-top:60px;
   padding-right:20%
+  padding-left:5%;
 }
 
 .menu {
@@ -374,17 +375,8 @@ a:hover, a:active, a:focus {
 */ Test Categories for Experimenting */
 
  
-<!-- The flex-container-header had to have its height adjusted here, 
-so that when the email div gets wrapped, it's got enough space in the
-flex-container-header element to fit. Otherwise, the email div just
-gets pushed under whatever's next on the webpage. And the height of 
-111px comes from 111px=90px (original height of this div) + 5 (padding-
-bottom for email dif) + 16 (font size of text in email div).
---> 
-
 .flex-container-header {
   display:flex;
-  height:111px; 
   flex-wrap:wrap;
 }
 
@@ -392,6 +384,7 @@ bottom for email dif) + 16 (font size of text in email div).
   flex-grow:2;
    background:green;
    padding-top:40px;
+   padding-bottom:16px;
    padding-left:5%
 }
 
@@ -399,8 +392,8 @@ bottom for email dif) + 16 (font size of text in email div).
   background:blue;
   padding-top:0px;
   padding-bottom:5px;
-  padding-right:0%;
   padding-left:5%
+  padding-right:0%;
 }
 
  
