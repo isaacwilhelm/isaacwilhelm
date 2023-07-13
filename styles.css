@@ -296,6 +296,7 @@ a:hover, a:active, a:focus {
 .flex-container-header {
   display:flex;
   height:90px;
+  flex-wrap:wrap;
 }
 
 
