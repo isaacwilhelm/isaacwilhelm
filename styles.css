@@ -373,12 +373,6 @@ a:hover, a:active, a:focus {
 
 */ Test Categories for Experimenting */
 
-.flex-container-header {
-  display:flex;
-  height:90px;
-  flex-wrap:wrap;
-}
-
 .flex-header {
   flex-grow:2;
    background:green;
@@ -460,12 +454,6 @@ a:hover, a:active, a:focus {
  
 */ Test Categories for Experimenting */
 
-.flex-container-header {
-  display:flex;
-  height:90px;
-  flex-wrap:wrap;
-}
-
 .flex-email {
   background:blue;
   padding-top:0px;
@@ -515,12 +503,6 @@ a:hover, a:active, a:focus {
 
 
  */ Test Categories for Experimenting */
-
-.flex-container-header {
-  display:flex;
-  height:90px;
-  flex-wrap:wrap;
-}
 
 .flex-email {
   background:blue;
