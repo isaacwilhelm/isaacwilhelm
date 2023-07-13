@@ -373,6 +373,21 @@ a:hover, a:active, a:focus {
 
 */ Test Categories for Experimenting */
 
+ 
+<!-- The flex-container-header had to have its height adjusted here, 
+so that when the email div gets wrapped, it's got enough space in the
+flex-container-header element to fit. Otherwise, the email div just
+gets pushed under whatever's next on the webpage. And the height of 
+111px comes from 111px=90px (original height of this div) + 5 (padding-
+bottom for email dif) + 16 (font size of text in email div).
+--> 
+
+.flex-container-header {
+  display:flex;
+  height:111px; 
+  flex-wrap:wrap;
+}
+
 .flex-header {
   flex-grow:2;
    background:green;
