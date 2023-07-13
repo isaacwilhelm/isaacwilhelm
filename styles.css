@@ -293,6 +293,9 @@ a:hover, a:active, a:focus {
   grid-gap: 20px;
 }
 
+.flex-container {
+  display: flex;
+}
 
 
 
@@ -343,6 +346,16 @@ a:hover, a:active, a:focus {
     padding-bottom:10px;
   }
 
+
+*/ Test Categories for Experimenting */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+ 
 }
 
 
