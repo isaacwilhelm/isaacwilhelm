@@ -299,10 +299,27 @@ a:hover, a:active, a:focus {
   flex-wrap:wrap;
 }
 
+.flex-header {
+  flex-grow:2;
+   background:green;
+   padding-top:40px;
+   padding-left:20%
+}
+
 .flex-email {
   background:blue;
   padding-top:60px;
   padding-right:20%
+}
+
+.menu {
+  display: flex;
+  background-color: #FFFFFF;
+  font-size:16px;
+  font-family: Times New Roman, serif;
+  text-align:center;
+  padding-left:20%;
+  height: 40px;
 }
 
 
@@ -362,12 +379,19 @@ a:hover, a:active, a:focus {
   flex-wrap:wrap;
 }
 
+.flex-header {
+  flex-grow:2;
+   background:green;
+   padding-top:40px;
+   padding-left:5%
+}
+
 .flex-email {
   background:blue;
   padding-top:0px;
   padding-bottom:5px;
   padding-right:0%;
-  padding-left:20%
+  padding-left:5%
 }
 
  
