@@ -277,54 +277,6 @@ a:hover, a:active, a:focus {
 
 
 
-/* Test Categories for Experimenting */
-
-.grid-containertop {
-  padding-left:5%;
-  display: grid;
-  grid-template-columns: 5fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid-container {
-  padding-left:5%;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.flex-container-header {
-  display:flex;
-  flex-wrap:wrap;
-}
-
-.flex-header {
-  flex-grow:2;
-   background:green;
-   padding-top:40px;
-   padding-bottom:16px;
-   padding-left:20%
-}
-
-.flex-email {
-  background:blue;
-  padding-top:60px;
-  padding-right:20%
-  padding-left:5%;
-}
-
-.menu {
-  display: flex;
-  background-color: #FFFFFF;
-  font-size:16px;
-  font-family: Times New Roman, serif;
-  text-align:center;
-  padding-left:20%;
-  height: 40px;
-}
-
-
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
@@ -370,32 +322,6 @@ a:hover, a:active, a:focus {
     padding-left:5%;
     padding-bottom:10px;
   }
-
-
-*/ Test Categories for Experimenting */
-
- 
-.flex-container-header {
-  display:flex;
-  flex-wrap:wrap;
-}
-
-.flex-header {
-  flex-grow:2;
-   background:green;
-   padding-top:40px;
-   padding-bottom:16px;
-   padding-left:5%
-}
-
-.flex-email {
-  background:blue;
-  padding-top:0px;
-  padding-bottom:5px;
-  padding-left:5%
-  padding-right:0%;
-}
-
  
 }
 
@@ -458,19 +384,6 @@ a:hover, a:active, a:focus {
     padding-left:5%;
     padding-bottom:10px;
   }
-
- 
-*/ Test Categories for Experimenting */
-
-.flex-email {
-  background:blue;
-  padding-top:0px;
-  padding-bottom:5px;
-  padding-right:0%;
-  padding-left:20%
-}
-
-
  
 }
 
@@ -508,18 +421,6 @@ a:hover, a:active, a:focus {
     padding-left:5%;
     padding-bottom:10px;
   }
-
-
- */ Test Categories for Experimenting */
-
-.flex-email {
-  background:blue;
-  padding-top:0px;
-  padding-bottom:5px;
-  padding-right:0%;
-  padding-left:20%
-}
-
  
 }
 
