@@ -4,7 +4,17 @@
 
 /* The code `display: flex;' makes every item, in the contain in question, a flex item. */
 
-.flex-container {
+.flexheader {
   display: flex;
-  background-color: DodgerBlue;
+  background-color: green;
+}
+
+.flexheadername {
+  display: flex;
+  background-color: blue;
+}
+
+.flexheaderemail {
+  display: flex;
+  background-color: red;
 }
