@@ -6,6 +6,7 @@
 
 .flexheader {
   display: flex;
+  width: 60%;
   background-color: green;
 }
 
