@@ -11,10 +11,14 @@
 
 .flexheadername {
   display: flex;
-  background-color: blue;
+  background-color: DodgerBlue;
+  padding: 20px;
+  fontsize: 36px;
 }
 
 .flexheaderemail {
   display: flex;
   background-color: red;
+  padding: 20px;
+  fontsize: 16px;
 }
