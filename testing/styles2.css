@@ -12,6 +12,7 @@
 .flexheadername {
   display: flex;
   background-color: DodgerBlue;
+  margin: 10px;
   padding: 20px;
   fontsize: 36px;
 }
@@ -19,6 +20,7 @@
 .flexheaderemail {
   display: flex;
   background-color: red;
+  margin: 10px;
   padding: 20px;
   fontsize: 16px;
 }
