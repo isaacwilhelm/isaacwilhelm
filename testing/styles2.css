@@ -1,1 +1,8 @@
 
+/* The CSS selector `*' applies the specified values to the specified properties across all elements in the webpage whatsoever */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
