@@ -25,7 +25,10 @@
 .flexheaderspace {
   background-color: DimGray;
   margin: 10px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 150px;
+  padding-bottom: 150px;
+  padding-left: 20px;
   font-size: 16px;
 }
 
