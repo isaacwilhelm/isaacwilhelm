@@ -14,7 +14,7 @@
   background-color: DodgerBlue;
   margin: 10px;
   padding: 20px;
-  fontsize: 36px;
+  font-size: 36px;
 }
 
 .flexheaderemail {
@@ -22,5 +22,5 @@
   background-color: red;
   margin: 10px;
   padding: 20px;
-  fontsize: 16px;
+  font-size: 16px;
 }
