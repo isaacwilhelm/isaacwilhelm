@@ -26,9 +26,9 @@
   background-color: DimGray;
   margin: 10px;
   padding-top: 20px;
-  padding-right: 200px;
+  padding-right: 250px;
   padding-bottom: 20px;
-  padding-left: 200px;
+  padding-left: 250px;
 }
 
 /* The value of 40px assigned to `padding-top' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
