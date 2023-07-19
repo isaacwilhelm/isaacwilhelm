@@ -22,6 +22,13 @@
   font-size: 36px;
 }
 
+.flexheaderspace {
+  background-color: DimGray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 16px;
+}
+
 .flexheaderemail {
   background-color: red;
   margin: 10px;
