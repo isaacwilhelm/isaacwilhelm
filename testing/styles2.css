@@ -11,7 +11,7 @@
 
 .flexheader {
   display: flex;
-  width: 60%;
+  width: 800px;
   background-color: green;
 }
 
@@ -26,10 +26,12 @@
   background-color: DimGray;
   margin: 10px;
   padding-top: 20px;
-  padding-right: 150px;
+  padding-right: 200px;
   padding-bottom: 20px;
-  padding-left: 150px;
+  padding-left: 200px;
 }
+
+/* The value of 40px assigned to `padding-top' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
 
 .flexheaderemail {
   background-color: red;
