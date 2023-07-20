@@ -23,6 +23,7 @@
   font-size: 36px;
 }
 .flexheaderspace {
+  background-color: DarkOrange;
   padding: 20px 250px 0px 250px;
 }
 .flexheaderemail {
@@ -45,7 +46,7 @@
   flex-shrink: 0;
 }
 .flexheaderspace {
-  background-color: DodgerBlue;
+  background-color: DarkOrange;
   padding: 0px;
   flex-grow: 1;
   flex-shrink: 1;
