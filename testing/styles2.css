@@ -75,28 +75,24 @@
 
 /* Mobile Screens */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
 
 .flexheader {
   display: flex;
   width: 100%;
-  background-color: green;
 }
 .flexheadername {
   background-color: Violet;
-  margin: 10px;
-  padding: 20px;
-  font-size: 36px;
+  align-self: flex-start;
   flex-grow: 0;
   flex-shrink: 0;
 }
 .flexheaderspace {
-  background-color: DarkOrange;
   flex-grow: 1;
   flex-shrink: 1;
 }
 .flexheaderemail {
-  background-color: red;
+  align-self: flex-end;
   flex-grow: 0;
   flex-shrink: 0;
 }
