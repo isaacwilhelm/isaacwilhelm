@@ -45,7 +45,7 @@
 
 
 
-/* Tablet Screens (XXXXX) */
+/* Tablet Screens */
 
 @media only screen 
 and (min-device-width : 600px) 
@@ -58,7 +58,7 @@ and (max-device-width : 1000px) {
 }
 
 .flexheaderspace {
-  background-color: DimGray;
+  background-color: DarkOrange;
   margin: 10px;
   padding-top: 20px;
   padding-right: 25%;
