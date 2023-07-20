@@ -63,6 +63,8 @@
   background-color: DarkOrange;
   margin: 10px;
   padding: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .flexheaderemail {
   background-color: red;
