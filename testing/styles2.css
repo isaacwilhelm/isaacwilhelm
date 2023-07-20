@@ -83,16 +83,16 @@
   flex-wrap: wrap;
 }
 .flexheadername {
-  background-color: DarkOrange;
+  background-color: red;
   flex-grow: 0;
   flex-shrink: 0;
 }
 .flexheaderspace {
-  flex-grow: 1;
-  flex-shrink: 1;
+  margin: 0px;
+  padding-top: 0px;
 }
 .flexheaderemail {
-  background-color: DarkOrange;
+  background-color: red;
   padding: 0;
   flex-grow: 0;
   flex-shrink: 0;
