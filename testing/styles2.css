@@ -61,9 +61,7 @@
   background-color: DarkOrange;
   margin: 10px;
   padding-top: 20px;
-  padding-right: 250px;
   padding-bottom: 0px;
-  padding-left: 250px;
   flex-grow: 1;
   flex-shrink: 1;
 }
