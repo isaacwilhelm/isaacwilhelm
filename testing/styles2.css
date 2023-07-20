@@ -11,6 +11,8 @@
 /* The entry `margin: auto' is what centers the flexheader entry horizontally in the browser. */
 /* The value of 40px assigned to `padding-top' in `flexheaderspace' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
 
+
+/* Header with name and email */
 .flexheader {
   display: flex;
   width: 1000px;
@@ -29,9 +31,32 @@
 .flexheaderemail {
   background-color: red;
   padding: 40px 20px 0px 0px;
-  font-size: 16px;
 }
 
+
+/* Menu */
+.menu {
+  display: flex;
+  background-color: Aquamarine;
+  text-align: center;
+  width: 1000px;
+  height: 40px;
+  margin: auto;
+}
+.menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+}
+.menu a:hover {
+  background-color: #be5100;
+  color: white;
+}
+.menu a.active {
+  background-color: #be5100;
+  color: white;
+}
 
 
 /* Tablet Screens */
