@@ -10,7 +10,7 @@
 /* The code `display: flex;' makes every item, in the contain in question, a flex item. */
 /* The entry `margin: auto' is what centers the flexheader entry horizontally in the browser. */
 /* The value of 40px assigned to `padding-top' in `flexheaderemail' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
-
+/* The padding on the `.menu a' classes was calculated, in all cases, so that it equals the amount of space above and below the text in the menu buttons. */
 
 
 
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0px 12px;
   text-decoration: none;
 }
 .menu a:hover {
@@ -72,6 +72,8 @@
 /* Tablet Screens */
 
 @media screen and (max-width: 1000px) {
+  
+  /* Header with name and email */
   .flexheader {
     width: 100%;
   }
@@ -88,6 +90,10 @@
   .flexheaderemail {
     flex-grow: 0;
     flex-shrink: 0;
+  }
+  /* Menu */
+  .menu {
+    width: 100%;
   }
 }
 
@@ -116,6 +122,14 @@
     padding: 0px;
     flex-grow: 0;
     flex-shrink: 0;
+  }
+  /* Menu */
+  .menu {
+    height: 30px;
+  }
+  .menu a {
+  padding: 0px 7px;
+  text-decoration: none;
   }
 }
 
