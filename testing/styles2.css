@@ -13,8 +13,8 @@
 
 .flexheader {
   display: flex;
-  margin: auto;
   width: 1000px;
+  margin: auto;
   background-color: green;
 }
 .flexheadername {
