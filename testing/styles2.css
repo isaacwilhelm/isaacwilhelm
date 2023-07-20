@@ -20,23 +20,26 @@
 .flexheadername {
   background-color: DodgerBlue;
   margin: 10px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
   font-size: 36px;
 }
 .flexheaderspace {
   background-color: DimGray;
   margin: 10px;
   padding-top: 20px;
-  padding-right: 250px;
-  padding-bottom: 20px;
-  padding-left: 250px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
 }
 .flexheaderemail {
   background-color: red;
   margin: 10px;
   padding-top: 40px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-left: 20px;
   font-size: 16px;
 }
@@ -53,28 +56,16 @@
   background-color: green;
 }
 .flexheadername {
-  background-color: DodgerBlue;
-  margin: 10px;
-  padding: 20px;
-  font-size: 36px;
   flex-grow: 0;
   flex-shrink: 0;
 }
 .flexheaderspace {
   background-color: DarkOrange;
-  margin: 10px;
-  padding: 20px;
   flex-grow: 1;
   flex-shrink: 1;
 }
 .flexheaderemail {
   background-color: red;
-  margin: 10px;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  font-size: 16px;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -101,19 +92,11 @@
 }
 .flexheaderspace {
   background-color: DarkOrange;
-  margin: 10px;
-  padding: 20px;
   flex-grow: 1;
   flex-shrink: 1;
 }
 .flexheaderemail {
   background-color: red;
-  margin: 10px;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  font-size: 16px;
   flex-grow: 0;
   flex-shrink: 0;
 }
