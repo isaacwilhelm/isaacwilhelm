@@ -8,8 +8,8 @@
 
 
 /* The code `display: flex;' makes every item, in the contain in question, a flex item. */
+/* The entry `margin: auto' is what centers the flexheader entry horizontally in the browser. */
 /* The value of 40px assigned to `padding-top' in `flexheaderspace' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
-
 
 .flexheader {
   display: flex;
@@ -79,6 +79,44 @@
   flex-shrink: 0;
 }
 
+
+
+
+/* Mobile Screens */
+
+@media screen and (max-width: 500px) {
+
+.flexheader {
+  display: flex;
+  width: 100%;
+  background-color: green;
+}
+.flexheadername {
+  background-color: Violet;
+  margin: 10px;
+  padding: 20px;
+  font-size: 36px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.flexheaderspace {
+  background-color: DarkOrange;
+  margin: 10px;
+  padding: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flexheaderemail {
+  background-color: red;
+  margin: 10px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
 
   
   
