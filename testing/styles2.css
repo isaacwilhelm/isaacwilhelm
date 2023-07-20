@@ -19,7 +19,7 @@
 }
 .flexheadername {
   background-color: DodgerBlue;
-  margin: 0px;
+  margin: 10px;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 0px;
@@ -82,6 +82,7 @@
   flex-direction: column;
 }
 .flexheadername {
+  margin: 0px;
   background-color: DodgerBlue;
   flex-grow: 0;
   flex-shrink: 0;
@@ -91,6 +92,7 @@
   padding-top: 0px;
 }
 .flexheaderemail {
+  margin: 00px;
   background-color: DarkOrange;
   padding-top: 0px;
   padding-right: 0px;
