@@ -84,7 +84,7 @@
   width: 100%;
 }
 .flexheadername {
-  background-color: red;
+  background-color: DodgerBlue;
   align-self: flex-start;
   flex-grow: 0;
   flex-shrink: 0;
@@ -94,6 +94,7 @@
   flex-shrink: 1;
 }
 .flexheaderemail {
+  background-color: DodgerBlue;
   align-self: flex-end;
   flex-grow: 0;
   flex-shrink: 0;
