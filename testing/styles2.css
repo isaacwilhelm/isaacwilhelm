@@ -74,7 +74,7 @@
 
 /* Mobile Screens */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 525px) {
 
 .flexheader {
   display: flex;
