@@ -8,20 +8,20 @@
 
 
 /* The code `display: flex;' makes every item, in the contain in question, a flex item. */
+/* The value of 40px assigned to `padding-top' in `flexheaderspace' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
+
 
 .flexheader {
   display: flex;
   width: 1000px;
   background-color: green;
 }
-
 .flexheadername {
   background-color: DodgerBlue;
   margin: 10px;
   padding: 20px;
   font-size: 36px;
 }
-
 .flexheaderspace {
   background-color: DimGray;
   margin: 10px;
@@ -30,9 +30,6 @@
   padding-bottom: 20px;
   padding-left: 250px;
 }
-
-/* The value of 40px assigned to `padding-top' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
-
 .flexheaderemail {
   background-color: red;
   margin: 10px;
@@ -54,15 +51,14 @@
   width: 100%;
   background-color: green;
 }
-
 .flexheadername {
   background-color: DodgerBlue;
   margin: 10px;
   padding: 20px;
   font-size: 36px;
-  flex-grow: 1
+  flex-grow: 0;
+  flex-shrink: 0;
 }
-
 .flexheaderspace {
   background-color: DarkOrange;
   margin: 10px;
@@ -70,10 +66,8 @@
   padding-right: 25%;
   padding-bottom: 20px;
   padding-left: 25%;
-  flex-grow: 2
 }
-
-  .flexheaderemail {
+.flexheaderemail {
   background-color: red;
   margin: 10px;
   padding-top: 40px;
@@ -81,7 +75,8 @@
   padding-bottom: 20px;
   padding-left: 20px;
   font-size: 16px;
-  flex-grow: 1
+  flex-grow: 0;
+  flex-grow: 0;
 }
 
 
