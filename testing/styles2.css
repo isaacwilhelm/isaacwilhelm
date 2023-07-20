@@ -51,9 +51,7 @@
 @media screen and (max-width: 1000px) {
 
 .flexheader {
-  display: flex;
   width: 100%;
-  background-color: green;
 }
 .flexheadername {
   flex-grow: 0;
@@ -62,12 +60,14 @@
 .flexheaderspace {
   background-color: DarkOrange;
   margin: 10px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 250px;
+  padding-bottom: 0px;
+  padding-left: 250px;
   flex-grow: 1;
   flex-shrink: 1;
 }
 .flexheaderemail {
-  background-color: red;
   flex-grow: 0;
   flex-shrink: 0;
 }
