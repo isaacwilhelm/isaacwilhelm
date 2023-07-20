@@ -83,7 +83,7 @@
   flex-wrap: wrap;
 }
 .flexheadername {
-  background-color: red;
+  background-color: DodgerBlue;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -92,8 +92,11 @@
   padding-top: 0px;
 }
 .flexheaderemail {
-  background-color: red;
-  padding: 0;
+  background-color: DodgerBlue;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
   flex-grow: 0;
   flex-shrink: 0;
 }
