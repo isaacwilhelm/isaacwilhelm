@@ -79,7 +79,7 @@
 .flexheader {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .flexheadername {
   background-color: DodgerBlue;
