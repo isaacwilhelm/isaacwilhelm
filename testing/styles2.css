@@ -117,15 +117,10 @@
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid green;
 }
-
-.line2 {
-  width: 950px;
+hr { 
   margin: auto;
-  height: 1px;
-}
-hr {
   height: 1px;
   border-width: 0;
   background-color: #dcdcdc;
