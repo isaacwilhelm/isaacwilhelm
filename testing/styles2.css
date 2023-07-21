@@ -110,11 +110,10 @@
 
 /* Testing Dropdown */
 .dropbtn2 {
-  background-color: #4CAF50;
-  color: white;
+  background-color: White;
+  color: black;
   padding: 16px;
   font-size: 16px;
-  border: none;
   cursor: pointer;
 }
 .dropdown2 {
@@ -122,7 +121,7 @@
   display: inline-block;
 }
 .dropdown2:hover .dropbtn2 {
-  background-color: #3e8e41;
+  background-color: #be5100;
 }
 .dropdown-content2 {
   display: none;
@@ -143,7 +142,8 @@
   display: block;
 }
 .dropdown-content2 a:hover {
-  background-color: #f1f1f1
+  background-color: #be5100
+  color: white;
 }
 
 
