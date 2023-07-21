@@ -54,7 +54,7 @@
   padding: 10px;
   text-decoration: none;
 }
-.menu a:hover {
+.menu a: hover {
   background-color: #be5100;
   color: white;
 }
