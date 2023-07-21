@@ -18,7 +18,7 @@
 
 .flexheader {
   display: flex;
-  width: 1000px;
+  width: 950px;
   margin: auto;
   background-color: green;
 }
@@ -46,7 +46,7 @@
   background-color: Aquamarine;
   text-align: center;
   align-items: center; /* ? */
-  width: 1000px;
+  width: 950px;
   margin: auto;
 }
 .menu a {
@@ -109,12 +109,19 @@
 }
 
 
+/* Horizontal line */
+.line-1 {
+  width: 950px;
+  margin: auto;
+  height: 1px;
+}
+
 
 
 
 /* Tablet Screens */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   
   /* Header with name and email */
   .flexheader {
