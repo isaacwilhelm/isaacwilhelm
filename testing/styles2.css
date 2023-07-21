@@ -46,6 +46,7 @@
   background-color: Aquamarine;
   text-align: center;
   justify-content: center; /* ? */
+  align-items: center; /* ? */
   width: 1000px;
   height: 40px;
   margin: auto;
