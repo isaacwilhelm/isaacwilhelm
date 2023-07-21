@@ -112,10 +112,10 @@
 
 
 /* Horizontal line */
-        .line {
-            border-bottom: 5px solid red;
-            margin-top: 5px;
-            width: 90%;
+  .line {
+    width: 950px;
+    margin: 10px; 0px;
+    border-bottom: 5px solid red;
         }
 
 .line2 {
