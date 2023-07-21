@@ -117,7 +117,7 @@
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-bottom: 5px solid green;
+  border-bottom: 1px solid #dcdcdc;
 }
 hr { 
   margin: auto;
