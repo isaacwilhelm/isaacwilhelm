@@ -112,18 +112,22 @@
 
 
 /* Horizontal line */
-  .line {
-    width: 950px;
-    margin: 10px; 0px;
-    border-bottom: 5px solid red;
-        }
+.line {
+  width: 950px;
+  margin: auto;
+  border-bottom: 5px solid red;
+}
 
 .line2 {
   width: 950px;
   margin: auto;
   height: 1px;
 }
-
+hr {
+  height: 1px;
+  border-width: 0;
+  background-color: Gainsboro;
+}
 
 
 
