@@ -109,8 +109,16 @@
 }
 
 
+
+
 /* Horizontal line */
-.line {
+        .line {
+            border-bottom: 5px solid red;
+            margin-top: 5px;
+            width: 90%;
+        }
+
+.line2 {
   width: 950px;
   margin: auto;
   height: 1px;
