@@ -11,7 +11,7 @@
 /* The entry `margin: auto' is what centers the flexheader entry horizontally in the browser. */
 /* The value of 40px assigned to `padding-top' in `flexheaderemail' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
 /* The padding on the `.menu a' classes was calculated, in all cases, so that it equals the amount of space above and below the text in the menu buttons. */
-
+/* The `text-decoration: none' command is usually used to remove the underline from hyperlinks. */
 
 
 /* Header with name and email */
@@ -68,15 +68,15 @@
   padding: 10px;
   text-decoration: none;
 }
-.dropdownbutton:hover {
+.dropdownbutton: hover {
   background-color: #be5100;
   color: white;
 }
 /* Menu which dropdown buttons display */
-.dropdown-content {
+.dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: Brown;
   min-width: 100px;
   max-width: 200px;
   min-height: 50px;
@@ -84,20 +84,19 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.dropdown-content a {
-  font-size:14px;
-  color: black;
-  padding: 10px 12px;
+.dropdown-menu a {
+  font-size: 14px;
+  padding: 10px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
-.dropdown-content a:hover {
+.dropdown-menu a: hover {
   background-color: #be5100;
   color: white;
 }
 /* Displays the dropdown menu itself */
-.dropdown:hover .dropdown-content {
+.dropdownbutton: hover .dropdown-menu {
   display: block;
 }
 
