@@ -115,6 +115,8 @@
 .line {
   width: 950px;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-bottom: 5px solid red;
 }
 
