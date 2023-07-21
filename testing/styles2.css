@@ -62,8 +62,9 @@
   background-color: #be5100;
   color: white;
 }
+
 /* Dropdown button, which looks just like other menu buttons */
-.dropdown a.dropdownbutton { /* Added the `a' here. */
+.dropdown .dropdownbutton { /* Added the `a' here. */
   align-items: center;
   padding: 10px;
   text-decoration: none;
