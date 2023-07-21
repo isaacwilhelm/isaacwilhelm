@@ -62,24 +62,17 @@
   background-color: #be5100;
   color: white;
 }
-/* Style the dropdown button (so it looks like other menu buttons)*/
-.dropdownmenu {
-  display: flex;
-  background-color: Chartreuse;
-  text-align:center;
-  height: 40px;
-  color: #000000;
-  justify-content: center;
+/* Dropdown button, which looks just like other menu buttons*/
+.dropdownbutton {
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px;
   text-decoration: none;
 }
-/* On mouse-over */
 .dropdown:hover {
   background-color: #be5100;
   color: white;
 }
+/*  */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -125,6 +118,7 @@ hr {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-width: 0px;
   background-color: #dcdcdc;
 }
 
