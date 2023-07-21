@@ -54,7 +54,7 @@
   padding: 10px;
   text-decoration: none;
 }
-.menu a: hover {
+.menu a:hover {
   background-color: #be5100;
   color: white;
 }
@@ -68,20 +68,20 @@
   padding: 10px;
   text-decoration: none;
 }
-.dropdownbutton: hover {
+.dropdownbutton:hover {
   background-color: #be5100;
   color: white;
 }
 /* Menu which dropdown buttons display */
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: Brown;
-  min-width: 100px;
-  max-width: 200px;
-  min-height: 50px;
-  max-height: 500px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display:none;
+  position:absolute;
+  background-color:Brown;
+  min-width:100px;
+  max-width:200px;
+  min-height:50px;
+  max-height:500px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-menu a {
@@ -91,12 +91,12 @@
   display: block;
   text-align: left;
 }
-.dropdown-menu a: hover {
+.dropdown-menu a:hover {
   background-color: #be5100;
   color: white;
 }
 /* Displays the dropdown menu itself */
-.dropdownbutton: hover .dropdown-menu {
+.dropdownbutton:hover .dropdown-menu {
   display: block;
 }
 
