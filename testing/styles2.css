@@ -110,7 +110,7 @@
 
 
 /* Horizontal line */
-.line-1 {
+.line {
   width: 950px;
   margin: auto;
   height: 1px;
@@ -123,7 +123,7 @@
 
 @media screen and (max-width: 950px) {
   
-  /* Header with name and email */
+/* Header with name and email */
   .flexheader {
     width: 100%;
   }
@@ -141,8 +141,12 @@
     flex-grow: 0;
     flex-shrink: 0;
   }
-  /* Menu */
+/* Menu */
   .menu {
+    width: 100%;
+  }
+/* Horizontal line */
+  .line {
     width: 100%;
   }
 }
@@ -154,6 +158,8 @@
 /* Mobile Screens */
 
 @media screen and (max-width: 525px) {
+
+/* Header with name and email */
   .flexheader {
     display: flex;
     width: 100%;
