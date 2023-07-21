@@ -63,7 +63,7 @@
   color: white;
 }
 /* Dropdown button, which looks just like other menu buttons */
-.dropdownbutton {
+.dropdown .dropdownbutton {
   align-items: center;
   padding: 10px;
   text-decoration: none;
