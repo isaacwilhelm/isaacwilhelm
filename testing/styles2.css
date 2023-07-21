@@ -47,12 +47,11 @@
   text-align: center;
   align-items: center; /* ? */
   width: 1000px;
-  height: 40px;
   margin: auto;
 }
 .menu a {
   align-items: center;
-  padding: 12px;
+  padding: 10px;
   text-decoration: none;
 }
 .menu a:hover {
@@ -123,9 +122,6 @@
     flex-shrink: 0;
   }
   /* Menu */
-  .menu {
-    height: 30px;
-  }
   .menu a {
   padding: 7px;
   }
