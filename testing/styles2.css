@@ -64,10 +64,15 @@
 }
 
 /* Dropdown button, which looks just like other menu buttons */
-.dropdown .dropdownbutton { /* Added the `a' here. */
-  align-items: center;
-  padding: 10px;
-  text-decoration: none;
+.dropdown .dropdownbutton {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 .dropdownbutton:hover {
   background-color: #be5100;
