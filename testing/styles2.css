@@ -187,9 +187,6 @@ hr {
   .flexheaderemail {
     background-color: DarkOrange;
     padding: 0px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-right: auto; /* I think this'll move this element all the way to the left of the flexbox...? */
   }
   
 /* Navigation Menu */
