@@ -70,8 +70,7 @@
 
 /* This defines the class in which the entire dropdown menu -- both the menu itself and the associated button -- will be wrapped. */
 .dropdown2 {
-  position: relative;
-  display: inline-block; 
+  display: inline-block; /*  Add in " position: relative;" */
 }
 /* This styles the button, in the menu bar, itself. */
 .dropbtn2 {
@@ -93,7 +92,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*  Add in "padding: 0px;" */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*  Add in "padding: 0px;" */ 
   z-index: 1;
 }
 /* This says that when the cursor hovers over any part of the dropdown2 environment, the dropdown menu appears; i.e. it's display value chaanges from "none" to "block". */
