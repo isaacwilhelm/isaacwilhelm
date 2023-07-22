@@ -181,14 +181,13 @@ ol, li {
   background-color: DodgerBlue;
 }
 .flexlfjdescription {
-  flex-shrink: 1;
   padding: 0 20px;
   background-color: MediumSeaGreen;
   max-width: 300px;
   min-width: 150px;
 }
 .flexkathypic {
-  flex-shrink: 0; /* Removed "padding: 0;" */
+  flex-shrink: 0;
   background-color: Violet;
   margin-left: auto;
 }
@@ -245,11 +244,10 @@ ol, li {
 
 @media screen and (max-width: 775px) {
 
-/* Biography */
-.flexkathypic {
-  background-color: Violet;
-  margin-left: 0;
-}
+/* Book Publication */
+  .flexlfjdescription {
+  flex-shrink: 1;
+  }
 
 }
 
@@ -293,22 +291,9 @@ ol, li {
   }
 
 /* Book Publication */
-.flexbooks {
-  display: flex;
-  width: 900px;
-  background-color: Tomato;
-  margin: auto;
-}
-.flexbook1pic {
-  flex-shrink: 0;
-  padding: 0;
-  background-color: DodgerBlue;
-}
 .flexlfjdescription {
   padding: 0;
-}
-.flexkathypic {
-  padding: 0;
+  min-width: 0;
 }
 
 }
