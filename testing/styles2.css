@@ -12,16 +12,13 @@
   display: flex;
   width: 900px;
   margin: auto;
-  background-color: green;
 }
 .flexheadername {
-  background-color: DodgerBlue;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0 0 0;
   font-size: 36px;
 }
 .flexheaderemail {
-  background-color: red;
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0 0 0;
   margin-left: auto; /* Moves this element all the way to the right of the flexbox. */
 }
 
@@ -30,7 +27,6 @@
 
 .menu {
   display: flex;
-  background-color: Aquamarine;
   text-align: center;
   align-items: center; 
   width: 900px;
@@ -75,8 +71,9 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9; /* Maybe add back in " min-width: 160px;" */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #f9f9f9; 
+  min-width: 160px; /* Maybe remove */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
 /* This says that when the cursor hovers over any part of the dropdown2 environment, the dropdown menu appears; i.e. it's display value chaanges from "none" to "block". */
@@ -105,8 +102,8 @@ hr {
   height: 1px;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 10px;
-  border-width: 0px;
+  margin-bottom: 10;
+  border-width: 0;
   background-color: #dcdcdc;
 }
 
@@ -117,15 +114,12 @@ hr {
   display: flex;
   width: 900px;
   margin: auto;
-  background-color: DarkOrange;
 }
 .flexbiopicture {
-  background-color: DodgerBlue;
-  padding: 0px 20px 0px 0px;
+  padding: 0 20px 0 0;
 }
 .flexbiodescription {
-  background-color: red;
-  padding: 0px 0px 0px 20px;
+  padding: 0 0 0 20px;
 }
 
 
@@ -138,14 +132,6 @@ hr {
 /* Website Header */
   .flexheader {
     width: 100%;
-  }
-  .flexheadername {
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-  .flexheaderemail {
-    flex-grow: 0;
-    flex-shrink: 0;
   }
 
 /* Navigation Menu */
@@ -193,11 +179,7 @@ hr {
     flex-direction: column;
     align-items: flex-start; /* Aligns elements inside flexheader element to the left; note that this relies on the fact that flex-direction has value column, so align-items -- which positions elements relative to the cross axis -- now specifies horizontal positioning. */
   }
-  .flexheadername {
-    background-color: DodgerBlue;
-  }
   .flexheaderemail {
-    background-color: DarkOrange;
     padding: 0;
     margin-left: 0;
   }
