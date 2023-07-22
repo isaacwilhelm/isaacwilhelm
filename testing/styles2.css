@@ -36,6 +36,7 @@
   align-items: center;
   padding: 10px;
   text-decoration: none;
+  color: black;
 }
 .menu a:hover {
   background-color: #be5100;
@@ -161,6 +162,9 @@ hr {
 /* Biography */
 .flexbio {
   flex-direction: column;
+}
+.flexbiodescription {
+  padding: 0;
 }
 
 }
