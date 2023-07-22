@@ -16,7 +16,7 @@
 }
 .flexheadername {
   background-color: DodgerBlue;
-  padding: 20px 20px 0px 0px;
+  padding: 20px 0px 0px 0px;
   font-size: 36px;
 }
 .flexheaderemail {
@@ -32,7 +32,7 @@
   display: flex;
   background-color: Aquamarine;
   text-align: center;
-  align-items: center; /* ? */
+  align-items: center; 
   width: 900px;
   margin: auto;
 }
@@ -186,6 +186,7 @@ hr {
   .flexheaderemail {
     background-color: DarkOrange;
     padding: 0px;
+    margin-left: 0px; /* Adding to push email to left (via align-items above) */
   }
   
 /* Navigation Menu */
