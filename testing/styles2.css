@@ -183,6 +183,7 @@ ol, li {
   padding: 0 20px;
   background-color: MediumSeaGreen;
   max-width: 300px;
+  min-width: 150px;
 }
 .flexkathypic {
   padding: 0 0 0 20px;
@@ -227,6 +228,12 @@ ol, li {
   width: 100%;
 }
 
+/* Book Publication */
+.flexbooks {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 }
 
 
@@ -254,9 +261,7 @@ ol, li {
 @media screen and (max-width: 525px) {
 
 /* Website Header */
-  .flexheader {
-    display: flex;
-    width: 100%;
+  .flexheader { /* Removed "display: flex; width: 100%;" */
     flex-direction: column;
     align-items: flex-start; /* Aligns elements inside flexheader element to the left; note that this relies on the fact that flex-direction has value column, so align-items -- which positions elements relative to the cross axis -- now specifies horizontal positioning. */
   }
