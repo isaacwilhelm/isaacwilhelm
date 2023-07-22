@@ -114,10 +114,11 @@
 
 /* Testing Dropdown */
 .dropdown2 {
-  display: inline-block; /*   position: relative; */
+  display: inline-block; 
 }
 .dropbtn2 {
-  background-color: red;
+  background-color: green;
+  display: inline-block;
   color: black;
   padding: 10px;
   border: none;
@@ -126,6 +127,18 @@
 }
 
 
+/* 
+  li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.dropdown {
+  display: inline-block;
+}
+*/
 
 
 
