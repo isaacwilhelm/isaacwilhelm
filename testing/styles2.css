@@ -118,9 +118,11 @@ hr {
 }
 .flexbiopicture {
   padding: 0 20px 0 0;
+  background-color: Orange;
 }
 .flexbiodescription {
   padding: 0 0 0 20px;
+  background-color: SlateBlue;
 }
 
 
@@ -166,6 +168,20 @@ ol, li {
   padding: 0;
 }
 
+
+/* Book Publication */
+
+.flexbooks {
+  display: flex;
+  width: 900px;
+  margin: auto;
+}
+.flexlfjpicture {
+  padding: 0 20px 0 0;
+}
+.flexlfjdescription {
+  padding: 0 0 0 20px;
+}
 
 
 
