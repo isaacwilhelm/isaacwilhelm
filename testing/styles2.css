@@ -167,10 +167,6 @@ ol, li {
   margin: 0 15px;
   padding: 0;
 }
-p { /* Maybe remove this if other change works. */
-  padding: 0;
-  margin: 0;
-}
 
 
 /* Book Publication */
@@ -178,13 +174,22 @@ p { /* Maybe remove this if other change works. */
 .flexbooks {
   display: flex;
   width: 900px;
+  background-color: Tomato;
   margin: auto;
 }
-.flexlfjpicture {
+.flexbook1pic {
   padding: 0 20px 0 0;
+  background-color: DodgerBlue;
 }
 .flexlfjdescription {
+  padding: 0 20px;
+  background-color: MediumSeaGreen;
+  max-width: 300px;
+}
+.flexkathypic {
   padding: 0 0 0 20px;
+  background-color: Violet;
+  margin-left: auto;
 }
 
 
