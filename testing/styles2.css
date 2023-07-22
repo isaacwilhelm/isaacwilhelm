@@ -72,7 +72,7 @@ a.dropbtn { /* Might need to remove the "a" here */
   display: none;
   position: absolute;
   background-color: #f9f9f9; 
-  min-width: 160px; /* Maybe remove */
+  min-width: 150px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
