@@ -28,6 +28,7 @@
 .flexheaderemail {
   background-color: red;
   padding: 40px 0px 0px 0px;
+  margin-left: auto; /* What I added. */
 }
 
 
