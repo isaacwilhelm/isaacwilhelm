@@ -6,8 +6,6 @@
 /* The `text-decoration: none' command is usually used to remove the underline from hyperlinks. */
 
 
-
-
 /* Website Header */
 
 .flexheader {
@@ -21,17 +19,11 @@
   padding: 20px 20px 0px 0px;
   font-size: 36px;
 }
-.flexheaderspace {
-  background-color: DarkOrange;
-  padding: 20px 250px 0px 250px;
-}
 .flexheaderemail {
   background-color: red;
   padding: 40px 0px 0px 0px;
-  margin-left: auto; /* What I added. */
+  margin-left: auto; /* Moves this element all the way to the right of the flexbox. */
 }
-
-
 
 
 /* Navigation Menu */
@@ -57,8 +49,6 @@
   background-color: #be5100;
   color: white;
 }
-
-
 
 
 /* Dropdown Menu */
@@ -109,8 +99,6 @@
 }
 
 
-
-
 /* Horizontal Line */
 hr { 
   width: 900px;
@@ -121,8 +109,6 @@ hr {
   border-width: 0px;
   background-color: #dcdcdc;
 }
-
-
 
 
 /* Biography */
@@ -149,19 +135,13 @@ hr {
 
 @media screen and (max-width: 900px) {
   
-/* Header with name and email */
+/* Website Header */
   .flexheader {
     width: 100%;
   }
   .flexheadername {
     flex-grow: 0;
     flex-shrink: 0;
-  }
-  .flexheaderspace {
-    background-color: DarkOrange;
-    padding: 0px;
-    flex-grow: 1;
-    flex-shrink: 1;
   }
   .flexheaderemail {
     flex-grow: 0;
@@ -204,14 +184,12 @@ hr {
     flex-grow: 0;
     flex-shrink: 0;
   }
-  .flexheaderspace {
-    padding-top: 0px;
-  }
   .flexheaderemail {
     background-color: DarkOrange;
     padding: 0px;
     flex-grow: 0;
     flex-shrink: 0;
+    margin-right: auto; /* I think this'll move this element all the way to the left of the flexbox...? */
   }
   
 /* Navigation Menu */
