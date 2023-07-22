@@ -167,6 +167,10 @@ ol, li {
   margin: 0 15px;
   padding: 0;
 }
+p { /* Maybe remove this if other change works. */
+  padding: 0;
+  margin: 0;
+}
 
 
 /* Book Publication */
