@@ -178,11 +178,10 @@ hr {
     display: flex;
     width: 100%;
     flex-direction: column;
+    align-items: flex-start; /* Aligns elements inside flexheader element to the left; note that this relies on the fact that flex-direction has value column, so align-items -- which positions elements relative to the cross axis -- now specifies horizontal positioning. */
   }
   .flexheadername {
     background-color: DodgerBlue;
-    flex-grow: 0;
-    flex-shrink: 0;
   }
   .flexheaderemail {
     background-color: DarkOrange;
