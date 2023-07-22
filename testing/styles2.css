@@ -57,7 +57,7 @@
 /* This styles the button, in the menu bar, itself. */
 .dropbtn {
   display: inline-block; /* Adding "display: inline-block" here was crucial...without it, the spacing was off. */
-  color: black;
+  color: #982906;
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -103,8 +103,7 @@ hr {
   width: 900px;
   height: 1px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0; /* Used to be "margin-top: 10px; margin-bottom: 10px;" */
   border-width: 0;
   background-color: #dcdcdc;
 }
