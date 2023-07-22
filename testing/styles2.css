@@ -291,9 +291,12 @@ ol, li {
   }
 
 /* Book Publication */
-.flexlfjdescription {
+  .flexlfjdescription {
   padding: 0;
   min-width: 0;
+}
+  .flexkathypic {
+  margin-right: auto;
 }
 
 }
