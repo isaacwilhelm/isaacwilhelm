@@ -139,6 +139,7 @@
 .dropdown-content2 a {
   font-size: 14px;
   color: black;
+  text-align: left;
   padding: 10px;
   text-decoration: none;
   display: block;
