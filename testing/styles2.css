@@ -294,10 +294,10 @@ ol, li {
   .flexlfjdescription {
   padding: 0;
   min-width: 0;
-}
+  }
   .flexkathypic {
-  margin-right: auto;
-}
+  margin: 0;
+  }
 
 }
 
