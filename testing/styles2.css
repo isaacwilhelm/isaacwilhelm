@@ -119,12 +119,14 @@
 }
 .dropbtn2 {
   display: inline-block; /* Adding "display: inline-block" here was crucial...without it, the spacing was off. */
-  background-color: green;
   color: black;
   padding: 10px;
   border: none;
   cursor: pointer;
   text-decoration: none;
+}
+.dropdown2:hover .dropbtn2 {
+  background-color: #be5100;
 }
 .dropdown-content2 {
   display: none;
