@@ -159,7 +159,10 @@ ul.dash {
   list-style-type: "- ";
   padding-left: 15px;
 }
-
+ul, li { 
+  margin: 0;
+  padding: 0;
+}
 
 
 
