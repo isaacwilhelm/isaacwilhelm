@@ -98,6 +98,7 @@
 
 
 /* Horizontal Line */
+
 hr { 
   width: 900px;
   height: 1px;
@@ -124,6 +125,27 @@ hr {
 }
 
 
+/* Hyperlink Formatting (for hyperlinks not in navigation menu) */
+
+a {
+  color: #982906;
+}
+a:visited {
+  color: #982906;
+}
+
+
+/* Content Headers */
+.header {
+  width: 900px;
+  margin: auto;
+  font-size: 24px;
+  text-align: left;
+}
+
+
+
+
 
 
 /* Tablet Screen 1 */
@@ -147,7 +169,12 @@ hr {
 
 /* Biography */
 .flexbio {
-    width: 100%;
+  width: 100%;
+}
+
+/* Content Headers */
+.header {
+  width: 100%;
 }
 
 }
