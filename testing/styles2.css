@@ -103,7 +103,8 @@ hr {
   width: 900px;
   height: 1px;
   margin: auto;
-  margin: 10px 0; /* Used to be "margin-top: 10px; margin-bottom: 10px;" */
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-width: 0;
   background-color: #dcdcdc;
 }
@@ -145,7 +146,7 @@ a:visited {
 }
 
 /* Lists */
-.publicationlist {
+.mainlist {
   width: 900px;
   margin: auto;
   text-align: left;
@@ -156,9 +157,14 @@ ul {
 }
 ul.dash {
   list-style-type: "- ";
-  padding-left: 15px;
+  margin: 0 15px;
+  padding: 0;
 }
 ul, li { 
+  margin: 0 15px;
+  padding: 0;
+}
+ol, li { 
   margin: 0 15px;
   padding: 0;
 }
@@ -197,7 +203,7 @@ ul, li {
 }
 
 /* Lists */
-.publicationlist {
+.mainlist {
   width: 100%;
 }
 
