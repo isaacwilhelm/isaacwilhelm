@@ -12,7 +12,7 @@
 
 .flexheader {
   display: flex;
-  width: 950px;
+  width: 900px;
   margin: auto;
   background-color: green;
 }
@@ -40,7 +40,7 @@
   background-color: Aquamarine;
   text-align: center;
   align-items: center; /* ? */
-  width: 950px;
+  width: 900px;
   margin: auto;
 }
 .menu a {
@@ -112,7 +112,7 @@
 
 /* Horizontal Line */
 hr { 
-  width: 950px;
+  width: 900px;
   height: 1px;
   margin: auto;
   margin-top: 10px;
@@ -128,7 +128,7 @@ hr {
 
 .flexbio {
   display: flex;
-  width: 950px;
+  width: 900px;
   margin: auto;
   background-color: DarkOrange;
 }
@@ -146,7 +146,7 @@ hr {
 
 /* Tablet Screens */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   
 /* Header with name and email */
   .flexheader {
@@ -176,6 +176,11 @@ hr {
   .line {
     width: 100%;
   }
+
+/* Biography */
+.flexbio {
+    width: 100%;
+}
 
 }
 
@@ -212,6 +217,12 @@ hr {
   .menu a {
   padding: 7px;
   }
+
+/* Biography */
+.flexbio {
+    width: 100%;
+    flex-direction: column;
+}
 
 }
 
