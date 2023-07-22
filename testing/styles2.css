@@ -1,5 +1,5 @@
 /* The CSS selector `*' applies the specified values to the specified properties across all elements in the webpage whatsoever. */
-/* The code `display: flex;' makes every item, in the contain in question, a flex item. */
+/* The code `display: flex;' makes every item, in the element in question, a flex item. */
 /* The entry `margin: auto' is what centers the flexheader entry horizontally in the browser. */
 /* The value of 40px assigned to `padding-top' in `flexheaderemail' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
 /* The padding on the `.menu a' classes was calculated, in all cases, so that it equals the amount of space above and below the text in the menu buttons. */
@@ -104,7 +104,7 @@ hr {
   height: 1px;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 10;
+  margin-bottom: 10px;
   border-width: 0;
   background-color: #dcdcdc;
 }
@@ -140,6 +140,7 @@ a:visited {
 .header {
   width: 900px;
   margin: auto;
+  padding: 10px 0;
   font-size: 24px;
   text-align: left;
 }
