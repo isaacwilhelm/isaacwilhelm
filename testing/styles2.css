@@ -131,7 +131,7 @@ hr {
 
 
 
-/* Tablet Screens */
+/* Tablet Screen 1 */
 
 @media screen and (max-width: 900px) {
   
@@ -168,6 +168,19 @@ hr {
 
 
 
+/* Tablet Screen 2 (for biography element specifically) */
+
+@media screen and (max-width: 625px) {
+
+/* Biography */
+.flexbio {
+  flex-direction: column;
+}
+
+}
+
+
+
 
 /* Mobile Screens */
 
@@ -185,20 +198,14 @@ hr {
   }
   .flexheaderemail {
     background-color: DarkOrange;
-    padding: 0px;
-    margin-left: 0px; /* Adding to push email to left (via align-items above) */
+    padding: 0;
+    margin-left: 0;
   }
   
 /* Navigation Menu */
   .menu a {
   padding: 7px;
   }
-
-/* Biography */
-.flexbio {
-    width: 100%;
-    flex-direction: column;
-}
 
 }
 
