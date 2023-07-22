@@ -152,6 +152,13 @@ a:visited {
   text-align: left;
   background-color: dodgerblue; 
 }
+ul {
+  list-style-type: "• ";
+}
+ul.dash {
+  list-style-type: "- ";
+  padding-left: 15px;
+}
 
 
 
