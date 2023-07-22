@@ -55,8 +55,8 @@
   display: inline-block; /*  Removing "position: relative;" from this was important; with that declaration in there, the dropdown menu was being shrunk so that the text in the "Activities" section wrapped, and there wasn't much I could do about it. */
 }
 /* This styles the button, in the menu bar, itself. */
-.dropbtn {
-  display: inline-block; /* Adding "display: inline-block" here was crucial...without it, the spacing was off. */
+a.dropbtn { /* Might need to remove the "a" here */
+  display: inline-block; /* Adding "display: inline-block" here was crucial. Without it, the spacing was off. */
   color: #982906;
   padding: 10px;
   border: none;
