@@ -113,14 +113,16 @@
 
 
 /* Testing Dropdown */
-.menu a.dropdown2 {
+.dropdown2 {
   position: relative;
-  display: inline-block;
+  display: inline;
 }
-.menu.dropbtn2 {
+.dropbtn2 {
   background-color: green;
   color: black;
-  padding: 10px;  /* If this doesn't work, put "border: none;" and "cursor: pointer;" back in. */
+  padding: 10px;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
 }
 
