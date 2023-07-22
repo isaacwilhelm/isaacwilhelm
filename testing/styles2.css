@@ -126,7 +126,7 @@ hr {
 
 /* Biography */
 
-.flexbiopicture {
+.flexbio {
   display: flex;
   width: 950px;
   margin: auto;
