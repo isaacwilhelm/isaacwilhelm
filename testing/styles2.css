@@ -114,10 +114,10 @@
 
 /* Testing Dropdown */
 .dropdown2 {
-  display: inline; /*   position: relative; */
+  display: inline-block; /*   position: relative; */
 }
 .dropbtn2 {
-  background-color: green;
+  background-color: red;
   color: black;
   padding: 10px;
   border: none;
