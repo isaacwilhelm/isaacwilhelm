@@ -69,11 +69,11 @@
 /* Dropdown Menu */
 
 /* This defines the class in which the entire dropdown menu -- both the menu itself and the associated button -- will be wrapped. */
-.dropdown2 {
-  display: inline-block; /*  Add in " position: relative;" */
+.dropdown {
+  display: inline-block; /*  Removing "position: relative;" from this was important; with that declaration in there, the dropdown menu was being shrunk so that the text in the "Activities" section wrapped, and there wasn't much I could do about it. */
 }
 /* This styles the button, in the menu bar, itself. */
-.dropbtn2 {
+.dropbtn {
   display: inline-block; /* Adding "display: inline-block" here was crucial...without it, the spacing was off. */
   color: black;
   padding: 10px;
@@ -82,34 +82,34 @@
   text-decoration: none;
 }
 /* This ensures that when the cursor goes over the menu, the button dropbtn2 will still be highlighted. */
-.dropdown2:hover .dropbtn2 {
+.dropdown:hover .dropbtn {
   background-color: #be5100;
   color: white;
 }
 /* This defines the dropdown menu, and hides it using "display: none;". */
-.dropdown-content2 {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*  Add in "padding: 0px;" */ 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 /* This says that when the cursor hovers over any part of the dropdown2 environment, the dropdown menu appears; i.e. it's display value chaanges from "none" to "block". */
-.dropdown2:hover .dropdown-content2 {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 /* This styles the buttons in the dropdown menu. */
-.dropdown-content2 a {
+.dropdown-content a {
   font-size: 14px;
   color: black;
   text-align: left;
   padding: 10px; 
   text-decoration: none;
-  display: block;
+  display: block; 
 }
 /* This says how to highlight a button in the dropdown menu when the cursor hovers over it. */
-.dropdown-content2 a:hover {
+.dropdown-content a:hover {
   background-color: #be5100
   color: white;
 }
