@@ -61,7 +61,6 @@
   padding: 10px;
   border: none;
   cursor: pointer;
-  text-decoration: none;
 }
 /* This ensures that when the cursor goes over the menu, the button dropbtn2 will still be highlighted. */
 .dropdown:hover .dropbtn {
