@@ -139,7 +139,7 @@ a:visited {
 .header {
   width: 900px;
   margin: auto;
-  padding 5px 0;
+  padding: 5px 0;
   font-size: 24px;
   text-align: left;
 }
@@ -156,7 +156,7 @@ a:visited {
 .mainlist {
   width: 900px;
   margin: auto;
-  padding 0 0 5px 0;
+  padding: 0 0 5px 0;
   text-align: left;
 }
 ul {
@@ -352,12 +352,12 @@ ol, li {
 
 /* Content Headers */
   .header {
-  padding 0;
+  padding: 0;
   }
 
 /* Lists */
   .mainlist {
-  padding 0;
+  padding: 0;
   }
 
 /* Book Publication */
