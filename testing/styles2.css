@@ -175,7 +175,6 @@ ol, li {
   margin: auto;
 }
 .flexbook1pic {
-  flex-shrink: 0;
   padding: 0 20px 0 0;
 }
 .flexlfjdescription {
@@ -184,7 +183,6 @@ ol, li {
   min-width: 125px;
 }
 .flexkathypic {
-  flex-shrink: 0;
   margin-left: auto;
 }
 
@@ -241,11 +239,9 @@ ol, li {
 @media screen and (max-width: 775px) {
 
 /* Book Publication */
-  .flexlfjdescription {
-  flex-shrink: 1;
-  }
   .flexkathypic {
-  margin: 0;
+  margin-top: 10px;
+  margin-right: auto;
   }
 }
 
