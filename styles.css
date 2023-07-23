@@ -255,6 +255,14 @@ ol, li {
 }
 
 
+/* Activities */
+
+.rutgerseventssummary {
+  width: 900px;
+  margin: auto;
+  padding: 52px 0;
+}
+
 
 /* Tablet Screen 1 */
 
@@ -311,6 +319,11 @@ ol, li {
   width: 100%;
 }
 .smallbr {
+  width: 100%;
+}
+
+/* Activities */
+.rutgerseventssummary {
   width: 100%;
 }
 
