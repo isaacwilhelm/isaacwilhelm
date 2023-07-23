@@ -183,8 +183,8 @@ ol, li {
 .flexlfjdescription {
   padding: 0 20px;
   background-color: MediumSeaGreen;
-  max-width: 300px;
-  min-width: 150px;
+  max-width: 250px;
+  min-width: 125px;
 }
 .flexkathypic {
   flex-shrink: 0;
@@ -248,7 +248,9 @@ ol, li {
   .flexlfjdescription {
   flex-shrink: 1;
   }
-
+  .flexkathypic {
+  margin: 0;
+  }
 }
 
 
@@ -294,9 +296,6 @@ ol, li {
   .flexlfjdescription {
   padding: 0;
   min-width: 0;
-  }
-  .flexkathypic {
-  margin: 0;
   }
 
 }
