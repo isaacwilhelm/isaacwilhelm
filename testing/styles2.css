@@ -175,13 +175,13 @@ ol, li {
   width: 900px;
   margin: auto;
 }
-.flexlfj {
+.flexlfj { /* This is a second flexbox element which contains the picture and words associated with Logic for Justice. Having this structure ensures that the words do not wrap. */
   display: flex;
 }
 .flexlfjpic {
   padding: 0 20px 0 0;
 }
-.flexlfjwords { /* This is a second flexbox element which contains the description, and Routledge link, associated with the picture of Logic for Justice. */
+.flexlfjwords { /* This is a third flexbox element which contains the description, and Routledge link, associated with the picture of Logic for Justice. Having this ensures that the words stack, and are evenly distributed, vertically. */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -249,14 +249,11 @@ ol, li {
 
 /* Tablet Screen 2 (for publication pictures specifically) */
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 790px) {
 
 /* Book Publication */
-.flexlfjsummary {
-  max-width: 175px; 
-}
-.flexlfjroutledge {
-  max-width: 175px; 
+.flexbookheader {
+  flex-direction: column;
 }
 .flexkathypic {
   padding-top: 20px;
@@ -305,9 +302,12 @@ ol, li {
   }
 
 /* Book Publication */
-  .flexlfjdescription {
-  padding: 0;
-  }
+.flexlfjsummary {
+  max-width: 175px; 
+}
+.flexlfjroutledge {
+  max-width: 175px; 
+}
 
 }
 
