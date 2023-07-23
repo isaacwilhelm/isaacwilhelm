@@ -1,390 +1,409 @@
-:root {
- --emailaddress: "iwilhelm@nus.edu.sg"; 
-}
+/* The selector `*' applies the specified values to the specified properties across all elements in the webpage whatsoever. */
+/* The code `display: flex;' makes every item, in the element in question, a flex item. */
+/* The entry `margin: auto' is what centers the flexheader entry horizontally in the browser. */
+/* The value of 40px assigned to `padding-top' in `flexheaderemail' was obtained by this equation: 40px = 20px (padding-top for flexheader name) + 36px (size of text in flexheadername) -16px (size of text in this element) */
+/* The padding on the `.menu a' classes was calculated, in all cases, so that it equals the amount of space above and below the text in the menu buttons. */
+/* The `text-decoration: none' command is usually used to remove the underline from hyperlinks. */
 
-#insert:after{
-  content: var(--emailaddress);
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Website Header */
 
-.page {
+.flexheader {
   display: flex;
-  flex-wrap: wrap;
+  width: 900px;
+  margin: auto;
+}
+.flexheadername {
+  padding: 20px 0 0 0;
+  font-size: 36px;
+}
+.flexheaderemail {
+  padding: 40px 0 0 0;
+  margin-left: auto; /* Moves this element all the way to the right of the flexbox. */
 }
 
-.section {
-  width: 100%;
-  display: flex;
-  justify-content: left;
-}
 
-.header {
-  background-color: #FFFFFF;
-  justify-content: start;
-  align-items: end;
-  padding-left:5%;
-  padding-top:40px;
-}
-
-.email {
-  background-color: #FFFFFF;
-  justify-content: flex-end;
-  align-self: flex-end;
-}
-
-ul {
-  list-style-type: "• ";
-  font-family: Times New Roman, serif;
-  color: black;
-  font-size:16px;
-}
-
-ul.b {
-  list-style-type: "- ";
-  padding-left:15px;
-}
-
-li {
-  font-family: Times New Roman, serif;
-  font-size:16px;
-  margin-top:3px;
-}
-
-a {
-  color: #982906;
-}
-
-a:visited {
-  color: #982906;
-}
-
-a:hover, a:active, a:focus {
-  color:#e38103;
-}
+/* Navigation Menu */
 
 .menu {
   display: flex;
-  background-color: #FFFFFF;
-  font-size:16px;
-  font-family: Times New Roman, serif;
-  text-align:center;
-  padding-left:5%;
-  height: 40px;
+  text-align: center;
+  align-items: center; 
+  width: 900px;
+  margin: auto;
 }
-
 .menu a {
-  display: flex;
-  color: #000000;
-  justify-content: center;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px;
   text-decoration: none;
+  color: #982906;
 }
-
 .menu a:hover {
   background-color: #be5100;
   color: white;
 }
-
 .menu a.active {
   background-color: #be5100;
   color: white;
 }
 
-/* Style the dropdown button (so it looks like other menu buttons)*/
-.dropdown .dropdown-btn {
-  font-size:16px;
-  font-family: Times New Roman, serif;
-  text-align:center;
-  height: 40px;
-  display: flex;
-  color: #000000;
-  justify-content: center;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-decoration: none;
-}
 
-/* On mouse-over */
-.dropdown-btn:hover {
+/* Navigation Menu */
+
+/* This defines the class in which the entire dropdown menu -- both the menu itself and the associated button -- will be wrapped. */
+.dropdown {
+  display: inline-block; /*  Removing "position: relative;" from this was important; with that declaration in there, the dropdown menu was being shrunk so that the text in the "Activities" section wrapped, and there wasn't much I could do about it. */
+}
+/* This styles the button, in the menu bar, itself. */
+a.dropbtn { /* Might need to remove the "a" here */
+  display: inline-block; /* Adding "display: inline-block" here was crucial. Without it, the spacing was off. */
+  color: #982906;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+/* This ensures that when the cursor goes over the menu, the button dropbtn2 will still be highlighted. */
+.dropdown:hover .dropbtn {
   background-color: #be5100;
   color: white;
 }
-
+/* This defines the dropdown menu, and hides it using "display: none;". */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100px;
-  max-width: 200px;
-  min-height: 50px;
-  max-height: 500px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #f9f9f9; 
+  min-width: 150px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
-
-.dropdown-content a {
-  font-size:14px;
-  font-family: Times New Roman, serif;
-  color: black;
-  padding: 10px 12px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #be5100;
-  color: white;
-}
-
-/* Displays the dropdown menu itself */
+/* This says that when the cursor hovers over any part of the dropdown2 environment, the dropdown menu appears; i.e. it's display value chaanges from "none" to "block". */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.line-1 {
-  background-color: LightGray;
-  padding-left:5%;
-  height: 1px;
-}
-
-.space-0 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: 45px;
-}
-
-.space-1 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: 20px;
-}
-
-.space-2 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: 20px;
-}
-
-.space-3 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: 10px;
-}
-
-.space-4 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: 5px;
-}
-
-.lessspace-1 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-  height: -10px;
-}
-
-.line-2 {
-  background-color: LightGray;
-  padding-left:5%;
-  height: 1px;
-}
-
-.picture {
-  background-color: #FFFFFF;
-  padding-left:5%;
-}
-
-.picture2 {
-  background-color: #FFFFFF;
-  padding-left:5%;
-}
-
-.picturebooks {
-  background-color: #FFFFFF;
-  padding-left:5%;
-}
-
-.description {
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #FFFFFF;
-  flex: 2;
-}
-
-.descriptionbooks {
-  padding-right: 5%;
-  background-color: #FFFFFF;
-  flex: 2;
-}
-
-.description2 {
-  padding-left:5%;
-  padding-right: 5%;
-  padding-top:15px;
-  background-color: #FFFFFF;
-}
-
-.description3 {
-  padding-left:5%;
-  padding-right: 5%;
-  background-color: #FFFFFF;
-}
-
-.description4 {
-  padding-left:7%;
-  padding-right: 5%;
-  padding-top:15px;
-  background-color: #FFFFFF;
-}
-
-.book  {
-  padding-left:5%;
-  padding-right: 5%;
-  background-color: #FFFFFF;
-  flex: 2;
-}
-
-.headerp {
-  font-family: Times New Roman, serif;
+/* This styles the buttons in the dropdown menu. */
+.dropdown-content a {
+  font-size: 14px;
   color: black;
-  background-color: #FFFFFF;
-  padding-left:5%;
-  padding-bottom:5px;
+  text-align: left;
+  padding: 10px; 
+  text-decoration: none;
+  display: block; 
+}
+/* This says how to highlight a button in the dropdown menu when the cursor hovers over it. */
+.dropdown-content a:hover {
+  background-color: #be5100
+  color: white;
 }
 
-.listing {
-  background-color: #FFFFFF;
-  padding-left:8%;
-  padding-right: 5%;
+
+/* Horizontal Line */
+
+hr { 
+  width: 900px;
+  height: 1px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-width: 0;
+  background-color: #dcdcdc;
 }
 
-.buttonreveal {
-  width: 100%;
+
+/* Biography */
+
+.flexbio {
   display: flex;
-  justify-content: left;
-  background-color: #FFFFFF;
+  width: 900px;
+  margin: auto;
+}
+.flexbiopicture {
+  padding: 0 20px 0 0;
+}
+.flexbiodescription {
+  padding: 0 0 0 20px;
+}
+
+
+/* Hyperlink Formatting */
+
+a {
+  text-decoration: none;
+  color: #982906;
+}
+a:visited {
+  color: #982906;
+}
+
+
+/* Content Headers */
+.header {
+  width: 900px;
+  margin: auto;
+  padding: 5px 0;
+  font-size: 24px;
+  text-align: left;
+}
+.headersmall {
+  width: 900px;
+  margin: auto;
+  padding: 5px 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+/* Lists */
+
+.mainlist {
+  width: 900px;
+  margin: auto;
+  padding: 0 0 5px 0;
+  text-align: left;
+}
+ul {
+  list-style-type: "• ";
+}
+ul.dash {
+  list-style-type: "- ";
+  margin: 0 15px;
+  padding: 0;
+}
+ul, li { 
+  margin: 0 15px;
+  padding: 0;
+}
+ol, li { 
+  margin: 0 15px;
+  padding: 0;
+}
+
+
+/* Book Publications on Research Page */
+
+.flexbookheader {
+  display: flex;
+  width: 900px;
+  margin: auto;
+}
+.flexlfj { /* This is a second flexbox element which contains the picture and words associated with Logic for Justice. Having this structure ensures that the words do not wrap. */
+  display: flex;
+}
+.flexlfjpic {
+  padding: 0 20px 0 0;
+}
+.flexlfjwords { /* This is a third flexbox element which contains the description, and Routledge link, associated with the picture of Logic for Justice. Having this ensures that the words stack, and are evenly distributed, vertically. */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flexlfjsummary {
+  padding: 0 20px;
+  max-width: 275px; 
+}
+.flexlfjroutledge {
+  padding: 0 20px; 
+}
+.flexkathypic {
+  margin-left: auto;
+}
+
+
+/* Book Pages */
+
+.flexlfjdetailed {
+  display: flex;
+  width: 900px;
+  margin: auto;
+}
+.flexlfjpicdetailed {
+  padding: 0 20px 20px 0;
+}
+.flexlfjwordsdetailed { /* This is a second flexbox element which contains the description, and Routledge link, associated with Logic for Justice. */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flexlfjsummarydetailed {
+  padding: 0 20px;
+}
+.flexlfjroutledgedetailed {
+  padding: 0 20px 20px 20px; 
+}
+
+
+/* Teaching List */
+
+.school {
+  width: 900px;
+  margin: auto;
+  padding: 5px 0;
+  text-decoration: underline;
+}
+
+
+/* Course Webpages (uses headersmall) */
+
+.summary {
+  width: 900px;
+  margin: auto;
+  padding: 5px 0;
+}
+.smallbr {
+  width: 900px;
+  margin: auto;
+  padding: 3px 0;
+}
+
+
+
+/* Tablet Screen 1 */
+
+@media screen and (max-width: 900px) {
+  
+/* Website Header */
+  .flexheader {
+    width: 100%;
+  }
+
+/* Navigation Menu */
+  .menu {
+    width: 100%;
+  }
+
+/* Horizontal Line */
+  hr { 
+    width: 100%;
+  }
+
+/* Biography */
+.flexbio {
+  width: 100%;
+}
+
+/* Content Headers */
+.header {
+  width: 100%;
+}
+
+/* Lists */
+.mainlist {
+  width: 100%;
+}
+
+/* Book Publication */
+.flexbookheader {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Book Pages (uses flexlfjpic from earlier) */
+.flexlfjdetailed {
+  width: 100%;
+}
+
+/* Teaching List */
+.school {
+  width: 100%;
+}
+
+/* Course Webpage */
+.summary {
+  width: 100%;
+}
+.smallbr {
+  width: 100%;
+}
+
 }
 
 
 
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
+/* Tablet Screen 2 (for publication pictures specifically) */
 
-  .email {
-  padding-left:5%;
-  justify-content: left;
-  align-items: end;
+@media screen and (max-width: 790px) {
+
+/* Book Publication */
+.flexbookheader {
+  flex-direction: column;
+}
+.flexkathypic {
+  padding-top: 20px;
+  margin: 0;
+}
+
+}
+
+
+
+
+/* Tablet Screen 3 (for biography element specifically) */
+
+@media screen and (max-width: 625px) {
+
+/* Biography */
+.flexbio {
+  flex-direction: column;
+}
+.flexbiodescription {
+  padding: 0;
+}
+
+}
+
+
+
+
+/* Mobile Screens */
+
+@media screen and (max-width: 525px) {
+
+/* Website Header */
+  .flexheader { 
+    flex-direction: column;
+    align-items: flex-start; /* Aligns elements inside flexheader element to the left; note that this relies on the fact that flex-direction has value column, so align-items -- which positions elements relative to the cross axis -- now specifies horizontal positioning. */
   }
-
+  .flexheaderemail {
+    padding: 0;
+    margin-left: 0;
+  }
+  
+/* Navigation Menu */
   .menu a {
-    font-size:14px;
-    height: 25px;
-    padding-left: 6px;
-    padding-right: 6px;
+  padding: 7px;
   }
 
-  .space-2 {
-    height: 0px;
+/* Content Headers */
+  .header {
+  padding: 0;
   }
 
-  .picture {
-    align-items: center;
-    justify-content: center;
-    padding-bottom:20px;
-  }
-  
-  .picture2 {
-    align-items: center;
-    justify-content: center;
-    paddingbottom: 30px;
+/* Lists */
+  .mainlist {
+  padding: 0;
   }
 
- .picturebooks {
-    align-items: center;
-    justify-content: center;
-}
-
-  .description {
-    padding-bottom:30px;
+/* Book Publication */
+  .flexlfjsummary {
+  max-width: 175px; 
+  }
+  .flexlfjroutledge {
+  max-width: 175px; 
   }
 
-  .descriptionbooks {
-    padding-left:5%;
-    padding-bottom:10px;
+/* Book Pages */
+  .flexlfjdetailed {
+  flex-direction: column;
   }
- 
-}
-
-
-
-
-/* Tablet Style 1 */
-@media only screen and (min-width: 401px) and (max-width: 649px) {
-
-  .email {
-    padding-left:5%;
-    justify-content: left;
-    align-items: end;
+  .flexlfjpicdetailed {
+  margin: auto;
   }
-
-  .menu a {
-    padding-left: 8px;
-    padding-right: 8px;
+  .flexlfjsummarydetailed {
+  padding: 0;
   }
-
-  /* Style the dropdown button */
-  .dropdown .dropdown-btn {
-    padding-left: 8px;
-    padding-right: 8px;
+.flexlfjroutledgedetailed {
+  padding: 0 0 20px 0;
   }
-
-  /* Style the dropdown menu */
-  .dropdown-content {
-    min-width: 80px;
-    max-width: 150px;
-  }
-
-  /* Style the text in the dropdown menu */
-  .dropdown-content a {
-    font-size:13px;
-  }
-
-  .picture {
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-  }
-  
-  .picture2 {
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
-  }
-
-  .description {
-    padding-bottom:30px;
-  }
-
-  .picturebooks {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .descriptionbooks {
-    padding-left:5%;
-    padding-bottom:10px;
-  }
- 
 }
 
 
@@ -392,71 +411,4 @@ a:hover, a:active, a:focus {
 
 
 
-/* Tablet Style 2 */
-@media only screen and (min-width: 650px) and (max-width: 960px) {
 
-  .header,
-  .email {
-    width: 40%;
-  }
-
-  .picture,
-  .description {
-    padding-bottom:30px;
-    width: 300px;
-  }
-  
-  .picture2 {
-    align-items: center;
-    justify-content: center;
-    padding-bottom:30px;
-  }
-
-  .picturebooks {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .descriptionbooks {
-    padding-left:5%;
-    padding-bottom:10px;
-  }
- 
-}
-
-
-
-
-
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-
-  .page {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  .header,
-  .email {
-    width: 50%;
-  }
-
-  .picture,
-  .description {
-    width: 30%;
-    height: 290px;
-  }
-  
-  .picture2,
-  .description {
-    width: 35%;
-    height: 290px;
-  }
-
-  .picturebooks {
-    width: 25%;
-    height: 225px; /* controls the height of the picturebooks div. If this value is bigger, then the hyperlink for "Logic for Justice" will extend beyond the book's cover image. */
-  }
-
-}
