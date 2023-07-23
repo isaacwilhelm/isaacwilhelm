@@ -142,6 +142,13 @@ a:visited {
   font-size: 24px;
   text-align: left;
 }
+.headersmall {
+  width: 900px;
+  margin: auto;
+  font-size: 18px;
+  text-align: left;
+}
+
 
 /* Lists */
 
@@ -168,7 +175,7 @@ ol, li {
 }
 
 
-/* Book Publication */
+/* Book Publications on Research Page */
 
 .flexbookheader {
   display: flex;
@@ -197,6 +204,25 @@ ol, li {
   margin-left: auto;
 }
 
+
+/* Book Pages (uses flexlfjpic from earlier) */
+
+.flexlfjdetailed {
+  display: flex;
+  width: 900px;
+  margin: auto;
+}
+.flexlfjwordsdetailed { /* This is a second flexbox element which contains the description, and Routledge link, associated with Logic for Justice. */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flexlfjsummarydetailed {
+  padding: 0 20px;
+}
+.flexlfjroutledgedetailed {
+  padding: 0 20px; 
+}
 
 
 
@@ -237,6 +263,11 @@ ol, li {
 /* Book Publication */
 .flexbookheader {
   flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Book Pages (uses flexlfjpic from earlier) */
+.flexlfjdetailed {
   width: 100%;
 }
 
