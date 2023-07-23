@@ -178,7 +178,7 @@ ol, li {
 .flexbook1pic {
   padding: 0 20px 0 0;
 }
-.flexlfjwords {
+.flexlfjwords { /* This is a second flexbox element which contains the description, and Routledge link, associated with the picture of Logic for Justice. */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -245,11 +245,11 @@ ol, li {
 
 /* Tablet Screen 2 (for publication pictures specifically) */
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 780px) {
 
 /* Book Publication */
   .flexkathypic {
-  margin-top: 10px;
+  padding-top: 20px;
   margin: 0;
   }
 }
