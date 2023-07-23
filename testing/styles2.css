@@ -235,9 +235,18 @@ ol, li {
 .school {
   width: 900px;
   margin: auto;
+  padding: 5px 0;
   text-decoration: underline;
 }
 
+/* Course Webpage */
+
+.classitems {
+  width: 900px;
+  margin: auto;
+  padding: 5px 0;
+  font-size: 20px;
+}
 
 
 
