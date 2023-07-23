@@ -341,7 +341,7 @@ ol, li {
   max-width: 175px; 
   }
 
-/* Book Pages (uses flexlfjpic from earlier) */
+/* Book Pages */
   .flexlfjdetailed {
   flex-direction: column;
   }
