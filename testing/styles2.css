@@ -184,7 +184,8 @@ ol, li {
   justify-content: space-around;
 }
 .flexlfjsummary {
-  padding: 0 20px; /* I removed "max-width: 275px; min-width: 125px;" */
+  padding: 0 20px;
+  max-width: 275px; 
   background-color: DodgerBlue;
 }
 .flexlfjad {
@@ -248,7 +249,10 @@ ol, li {
 @media screen and (max-width: 780px) {
 
 /* Book Publication */
-  .flexkathypic {
+.flexlfjsummary {
+  max-width: 175px; 
+}
+.flexkathypic {
   padding-top: 20px;
   margin: 0;
   }
