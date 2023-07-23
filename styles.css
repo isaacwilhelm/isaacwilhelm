@@ -83,7 +83,7 @@ a.dropbtn { /* Might need to remove the "a" here */
 /* This styles the buttons in the dropdown menu. */
 .dropdown-content a {
   font-size: 14px;
-  color: black;
+  color: #982906;
   text-align: left;
   padding: 10px; 
   text-decoration: none;
