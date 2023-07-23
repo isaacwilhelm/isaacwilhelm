@@ -181,6 +181,7 @@ ol, li {
   margin: auto;
   padding: 0 70px 0 3px;
   text-align: left;
+  
 }
 
 
@@ -270,6 +271,8 @@ ol, li {
 }
 
 
+
+
 /* Tablet Screen 1 */
 
 @media screen and (max-width: 900px) {
@@ -302,6 +305,9 @@ ol, li {
 /* Lists */
 .mainlist {
   width: 100%;
+}
+.confschlist { /* For lists that provide the schedule for conferences (revealed by buttons on the conference pages) */
+  width: 100%;  
 }
 
 /* Book Publication */
