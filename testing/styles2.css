@@ -228,6 +228,14 @@ ol, li {
 }
 
 
+/* Teaching List */
+.school {
+  width: 900px;
+  margin: auto;
+  text-decoration: underline;
+}
+
+
 
 
 /* Tablet Screen 1 */
@@ -272,6 +280,11 @@ ol, li {
 
 /* Book Pages (uses flexlfjpic from earlier) */
 .flexlfjdetailed {
+  width: 100%;
+}
+
+/* Teaching List */
+.school {
   width: 100%;
 }
 
