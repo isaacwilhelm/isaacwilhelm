@@ -212,6 +212,9 @@ ol, li {
   width: 900px;
   margin: auto;
 }
+.flexlfjpicdetailed {
+  padding: 0 20px 0 0;
+}
 .flexlfjwordsdetailed { /* This is a second flexbox element which contains the description, and Routledge link, associated with Logic for Justice. */
   display: flex;
   flex-direction: column;
@@ -331,12 +334,31 @@ ol, li {
   }
 
 /* Book Publication */
-.flexlfjsummary {
+  .flexlfjsummary {
   max-width: 175px; 
-}
-.flexlfjroutledge {
+  }
+  .flexlfjroutledge {
   max-width: 175px; 
+  }
+
+/* Book Pages (uses flexlfjpic from earlier) */
+  .flexlfjdetailed {
+  flex-direction: column;
+  }
+  .flexlfjpicdetailed {
+  margin: auto;
+  }
+  .flexlfjsummarydetailed {
+  padding: 0;
+  }
+.flexlfjroutledgedetailed {
+  padding: 0;
+  }
 }
 
-}
+
+
+
+
+
 
