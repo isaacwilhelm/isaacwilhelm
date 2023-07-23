@@ -248,6 +248,11 @@ ol, li {
   margin: auto;
   padding: 5px 0;
 }
+.smallbr {
+  width: 900px;
+  margin: auto;
+  padding: 5px 0;
+}
 
 
 
@@ -305,8 +310,10 @@ ol, li {
 .summary {
   width: 100%;
 }
-.courseitems {
-  width: 100%;
+.smallbr {
+  width: 900px;
+  margin: auto;
+  padding: 5px 0;
 }
 
 }
