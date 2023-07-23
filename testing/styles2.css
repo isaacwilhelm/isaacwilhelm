@@ -146,7 +146,8 @@ a:visited {
 .headersmall {
   width: 900px;
   margin: auto;
-  font-size: 18px;
+  padding: 5px 0;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -240,18 +241,12 @@ ol, li {
 }
 
 
-/* Course Webpage */
+/* Course Webpages (uses headersmall) */
 
-.coursesummary {
+.summary {
   width: 900px;
   margin: auto;
   padding: 5px 0;
-}
-.courseitems {
-  width: 900px;
-  margin: auto;
-  padding: 5px 0;
-  font-size: 20px;
 }
 
 
@@ -307,7 +302,7 @@ ol, li {
 }
 
 /* Course Webpage */
-.coursesummary {
+.summary {
   width: 100%;
 }
 .courseitems {
