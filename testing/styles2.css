@@ -355,6 +355,11 @@ ol, li {
   padding 0;
   }
 
+/* Lists */
+  .mainlist {
+  padding 0;
+  }
+
 /* Book Publication */
   .flexlfjsummary {
   max-width: 175px; 
