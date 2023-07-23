@@ -144,6 +144,7 @@ a:visited {
 }
 
 /* Lists */
+
 .mainlist {
   width: 900px;
   margin: auto;
@@ -166,7 +167,6 @@ ol, li {
   padding: 0;
 }
 
-
 /* Book Publication */
 
 .flexbooks {
@@ -178,9 +178,7 @@ ol, li {
   padding: 0 20px 0 0;
 }
 .flexlfjdescription {
-  padding: 0 20px;
-  max-width: 275px;
-  min-width: 125px;
+  padding: 0 20px; /* I removed "max-width: 275px; min-width: 125px;" */
 }
 .flexkathypic {
   margin-left: auto;
@@ -204,9 +202,9 @@ ol, li {
   }
 
 /* Horizontal Line */
-hr { 
+  hr { 
     width: 100%;
-}
+  }
 
 /* Biography */
 .flexbio {
@@ -241,7 +239,7 @@ hr {
 /* Book Publication */
   .flexkathypic {
   margin-top: 10px;
-  margin-right: auto;
+  margin: 0;
   }
 }
 
@@ -287,7 +285,6 @@ hr {
 /* Book Publication */
   .flexlfjdescription {
   padding: 0;
-  min-width: 0;
   }
 
 }
