@@ -186,6 +186,7 @@ ol, li {
 .flexkathypic {
   flex-shrink: 0;
   margin-left: auto;
+  background-color: red;
 }
 
 
