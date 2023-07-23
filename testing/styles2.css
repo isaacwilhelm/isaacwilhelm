@@ -170,12 +170,15 @@ ol, li {
 
 /* Book Publication */
 
-.flexbooks {
+.flexbookheader {
   display: flex;
   width: 900px;
   margin: auto;
 }
-.flexbook1pic {
+.flexlfj {
+  display: flex;
+}
+.flexlfjpic {
   padding: 0 20px 0 0;
 }
 .flexlfjwords { /* This is a second flexbox element which contains the description, and Routledge link, associated with the picture of Logic for Justice. */
@@ -188,7 +191,7 @@ ol, li {
   max-width: 275px; 
   background-color: DodgerBlue;
 }
-.flexlfjad {
+.flexlfjroutledge {
   padding: 0 20px; 
   background-color: Tomato;
 }
@@ -234,7 +237,7 @@ ol, li {
 }
 
 /* Book Publication */
-.flexbooks {
+.flexbookheader {
   flex-wrap: wrap;
   width: 100%;
 }
@@ -252,10 +255,14 @@ ol, li {
 .flexlfjsummary {
   max-width: 175px; 
 }
+.flexlfjroutledge {
+  max-width: 175px; 
+}
 .flexkathypic {
   padding-top: 20px;
   margin: 0;
-  }
+}
+
 }
 
 
