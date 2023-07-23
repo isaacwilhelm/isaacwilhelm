@@ -172,23 +172,23 @@ ol, li {
 .flexbooks {
   display: flex;
   width: 900px;
-  background-color: Tomato;
+<!--  background-color: Tomato;-->
   margin: auto;
 }
 .flexbook1pic {
   flex-shrink: 0;
   padding: 0 20px 0 0;
-  background-color: DodgerBlue;
+<!--  background-color: DodgerBlue;-->
 }
 .flexlfjdescription {
   padding: 0 20px;
-  background-color: MediumSeaGreen;
+<!--  background-color: MediumSeaGreen;-->
   max-width: 250px;
   min-width: 125px;
 }
 .flexkathypic {
   flex-shrink: 0;
-  background-color: Violet;
+<!--  background-color: Violet; -->
   margin-left: auto;
 }
 
