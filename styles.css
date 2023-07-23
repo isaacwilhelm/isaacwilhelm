@@ -176,6 +176,12 @@ ol, li {
   margin: 0 15px;
   padding: 0;
 }
+.confschlist { /* For lists that provide the schedule for conferences (revealed by buttons on the conference pages) */
+  width: 900px;
+  margin: auto;
+  padding: 0 70px 0 3px;
+  text-align: left;
+}
 
 
 /* Book Publications on Research Page */
