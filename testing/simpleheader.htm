@@ -24,21 +24,26 @@
     <!-- This sets the viewport to make the website look good on all devices. --> 
 
 <script type="text/javascript" src="script.js"></script>  
-  
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
 </head>
 
 
 <body>
   
 
-<div class="flexheader">
-  <div class="flexheadername">Isaac Wilhelm</div>
-  <div class="flexheaderemail">iwilhelm@nus.edu.sg</div>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
 </div>
 
-<p>Welcome to JavaScript</p>  
-<form>  
-<input type="button" value="click" onclick="msg()"/>  
-</form>  
-  
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
 </body>
