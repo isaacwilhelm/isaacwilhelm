@@ -1,1 +1,3 @@
-alert("This alert box was called with the onload event");
+    function msg(){  
+     alert("Hello Javatpoint");  
+    }  
