@@ -32,7 +32,7 @@
       $(document).ready(function(){    
         $("#header").load("sharedcontent.html #mainheader");
         $("#navbar").load("sharedcontent.html #navigationbar", function() {
-          $("#navbar .home").addClass("active");
+          $("#navbar .research").addClass("active");
         });
       });
     </script>
@@ -45,12 +45,6 @@
 <div id="header"></div>
 <div id="navbar"></div>
 
-
-  $(function() {
-     $('#content').load('/page', function() {
-         $('#content h1').addClass('world');
-     });
-});
 
   
 </body>
