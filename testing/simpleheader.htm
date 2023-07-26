@@ -23,33 +23,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This sets the viewport to make the website look good on all devices. --> 
 
-<script type="text/javascript" src="script.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+  <!-- This is the Google host website, a CDN, for jQuery. -->
 
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+<!--Website Header-->
+<script>
+  $(document).ready(function(){    
+    $("#mainheader").load("mainheader.htm")
+  }
+</script>
 
 </head>
 
 
 <body>
   
-
-
-<div class="flexheader">
-  <div class="flexheadername">Isaac Wilhelm</div>
-  <div class="flexheaderemail">iwilhelm@nus.edu.sg</div>
-</div>
-  
-<!--Navigation bar-->
-<div id="nav-placeholder"></div>
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav.html");
-});
-</script>
-<!--end of Navigation bar-->
-
-  https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
+<div id="mainheader"></div>
 
 
 </body>
