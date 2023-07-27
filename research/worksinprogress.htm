@@ -36,7 +36,7 @@
   <!-- Google host website for jQuery. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 
-  <!--Website Header and Navigation Bar-->  <!-- Adds the class `active' to the element which has class `research' -->
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
     <script>
       $(document).ready(function(){    
         $("#header").load("/sharedcontent.html #mainheader");
