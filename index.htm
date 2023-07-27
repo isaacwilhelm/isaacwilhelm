@@ -36,6 +36,16 @@
   <!-- Google host website for jQuery. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 
+  <!--Website Header and Navigation Bar-->  <!-- Adds the class `active' to the element which has class `research' -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("sharedcontent.html #mainheader");
+        $("#navbar").load("sharedcontent.html #navigationbar", function() {
+          $("#navbar .home").addClass("active");
+        });
+      });
+    </script>
+
   <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
     <script type="text/javascript">
       $(document).ready(function() {
@@ -141,17 +151,8 @@
 
 
   
+</body>
 
 
-  <!--Website Header and Navigation Bar-->  <!-- Adds the class `active' to the element which has class `research' -->
-    <script>
-      $(document).ready(function(){    
-        $("#header").load("sharedcontent.html #mainheader");
-        $("#navbar").load("sharedcontent.html #navigationbar", function() {
-          $("#navbar .home").addClass("active");
-        });
-      });
-    </script>
 
   
-</body>
