@@ -2,57 +2,65 @@
 <html lang='en'>
 
 <head>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-159306199-1');
     </script>
-  <title>Isaac Wilhelm</title>
-    <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
-  <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
-  <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
-  <meta charset='UTF-8'/>
-    <!-- Defines the set of characters which can be called. -->
-  <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
-    <!-- I think this defines keywords which search engines can use to identify my website. --> 
-  <meta name="description" content="Professional website for Isaac Wilhelm.">
-  <meta name="author" content="Isaac Wilhelm">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- This sets the viewport to make the website look good on all devices. --> 
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- Adds the class `active' to the element which has class `research' -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("sharedcontent.html #mainheader");
+        $("#navbar").load("sharedcontent.html #navigationbar", function() {
+          $("#navbar .research").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
 </head>
 
 
 <body>
 
-<div class="flexheader">
-  <div class="flexheadername">Isaac Wilhelm</div>
-  <div class="flexheaderemail">iwilhelm@nus.edu.sg</div>
-</div>
+<div id="header"></div>
 
-<div class="menu">
-  <a href="https://isaacwilhelm.github.io/isaacwilhelm">Home</a>
-    <div class="dropdown">
-      <a href="javascript:void(0)" class="active dropbtn">Research</a> 
-      <div class="dropdown-content">
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/research/publications.htm">Publications</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/research/worksinprogress.htm">Works in Progress</a>
-      </div>
-    </div>
-  <a href="https://isaacwilhelm.github.io/isaacwilhelm/teaching.htm">Teaching</a>
-    <div class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Activities</a>
-      <div class="dropdown-content">
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/nuscolloquia.htm">NUS Presidential Colloquia</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/nusconferences.htm">NUS Presidential Conferences</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/public.htm">Public Philosophy</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/rutgers.htm">Rutgers Events</a>
-      </div>
-    </div>
-  <a href="https://isaacwilhelm.github.io/isaacwilhelm/pdfs/CV- Wilhelm.pdf">CV</a>
-</div>
   
 <hr>
 
