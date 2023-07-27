@@ -36,6 +36,16 @@
   <!-- Google host website for jQuery. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 
+  <!--Website Header and Navigation Bar-->  <!-- Adds the class `active' to the element which has class `research' -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .research").addClass("active");
+        });
+      });
+    </script>
+
 </head>
 
 
@@ -78,15 +88,6 @@
 
   
 
-  <!--Website Header and Navigation Bar-->  <!-- Adds the class `active' to the element which has class `research' -->
-    <script>
-      $(document).ready(function(){    
-        $("#header").load("/sharedcontent.html #mainheader");
-        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
-          $("#navbar .research").addClass("active");
-        });
-      });
-    </script>
 
   
   
