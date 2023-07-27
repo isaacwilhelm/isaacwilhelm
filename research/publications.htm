@@ -36,11 +36,11 @@
   <!-- Google host website for jQuery. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 
-  <!--Website Header and Navigation Bar-->  <!-- Adds the class `active' to the element which has class `research' -->
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
     <script>
       $(document).ready(function(){    
-        $("#header").load("https://isaacwilhelm.github.io/isaacwilhelm/sharedcontent.html #mainheader");
-        $("#navbar").load("https://isaacwilhelm.github.io/isaacwilhelm/sharedcontent.html #navigationbar", function() {
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
           $("#navbar .research").addClass("active");
         });
       });
@@ -59,32 +59,10 @@
 
 <body>
 
-<div class="flexheader">
-  <div class="flexheadername">Isaac Wilhelm</div>
-  <div class="flexheaderemail">iwilhelm@nus.edu.sg</div>
-</div>
+<div id="header"></div>
+<div id="navbar"></div>
 
-<div class="menu">
-  <a href="https://isaacwilhelm.github.io/isaacwilhelm">Home</a>
-    <div class="dropdown">
-      <a href="javascript:void(0)" class="active dropbtn">Research</a> 
-      <div class="dropdown-content">
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/research/publications.htm">Publications</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/research/worksinprogress.htm">Works in Progress</a>
-      </div>
-    </div>
-  <a href="https://isaacwilhelm.github.io/isaacwilhelm/teaching.htm">Teaching</a>
-    <div class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Activities</a>
-      <div class="dropdown-content">
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/nuscolloquia.htm">NUS Presidential Colloquia</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/nusconferences.htm">NUS Presidential Conferences</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/public.htm">Public Philosophy</a>
-        <a href="https://isaacwilhelm.github.io/isaacwilhelm/activities/rutgers.htm">Rutgers Events</a>
-      </div>
-    </div>
-  <a href="https://isaacwilhelm.github.io/isaacwilhelm/pdfs/CV- Wilhelm.pdf">CV</a>
-</div><hr>
+<hr>
 
 <div class="flexbookheader">
   <div class="flexlfj">
