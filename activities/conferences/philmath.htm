@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">NUS Presidential Conference: XXXXX</div>
+<div class="summary">
+  <p><u>Date</u>: Nov 20-22, 2024.
+  <br><u>Location</u>: XXXXX</p>
+</div>
+
+<div class="summary">Speakers</div>
+<div class="mainlist">
+  <ol>
+    <li>XXXXX</li>
+  </ol>
+</div>
+
+<div class="smallbr"></div>
+
+<div class="summary">
+  <button onclick="myFunction()">Click for Schedule</button>
+  <div id="buttonreveal" style="display: none">
+    <div style="height: 20px;"></div>
+    <div style="padding-left: 20px;">
+      <u>XXXXX</u>
+    </div>
+    <div class="confschlist"> 
+      <ul>
+        <li>XXXXX-XXXXXam, XXXXX</li>
+        <li>XXXXX-XXXXXam, XXXXX</li>
+        <li>10-11:30am, Kevin Dorst (MIT): <em>Do Gambler's Commit Fallacies?</em></li>
+        <li>11:30–11:45am, break.</li>
+        <li>11:45am–1:15pm, Julia Staffel (Boulder): <em>Unfinished Business, or: When Being Akratic is a Good Idea</em>.</li>
+        <li>1:15–3:00pm, lunch.</li>
+        <li>3–4:30pm, Jennifer Carr (UCSD): <em>Now, What Have We Learned?</em></li>
+        <li>4:30–4:45pm, break.</li>
+        <li>4:45–6:15pm, Zach Barnett (NUS): <em>Against Risk-aversion</em>.</li>
+        <li>7pm, dinner: Whole Earth (76 Peck Seah St., 079331).</li>
+      </ul>
+    </div>
+    <div style='height: 20px;'>
+    </div>
+    <div style="padding-left: 20px;">
+      <u>May 26</u>
+    </div>
+    <div class="confschlist"> 
+      <ul>
+        <li>9:30-10am, coffee and refreshments.</li>
+        <li>10-11:30am, Kenny Easwaran (Texas A&M), joint work with Michael Nielsen (Sydney): <em>Learning by Maximizing Expected Accuracy in an Infinite, Non-Partitional Context</em>.</li>
+        <li>11:30–11:45am, break.</li>
+        <li>11:45am–1:15pm, Lisa Cassell (UMBC): <em>The Retrospective Account of Bayesian Updating</em>.</li>
+        <li>1:15–3:00pm, lunch.</li>
+        <li>3–4:30pm, Snow Zhang (Berkeley): <em>Why Image?</em></li>
+        <li>4:30-6:30pm, activity: Haw Par Villa.</li>
+        <li>7pm, dinner: Publico (1 Nanson Rd., 238909).</li>
+      </ul>
+    </div>
+    <div style='height: 20px;'>
+    </div>
+    <div style="padding-left: 20px;">
+      <u>May 27</u>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("buttonreveal");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+      x.style.display = "none";
+      }
+    }
+  </script>
+</div>
+
+<div class="genericdiv">
+  <p><u>Official Discussants</u>
+  <br>XXXX.</p>
+</div>
+
+<div class="genericdiv">
+  <p><u>Description</u>
+  <br>XXXXX</p>
+</div>
+
+<div class="genericdiv">
+  <p><u>Organizers</u>: Lavinia Picollo (NUS) and Dan Waxman (NUS).
+  <br><u>Sponsors</u>: NUS Presidential Young Professorship grant, Isaac Wilhelm (NUS).
+</div>
+
+<br>
+<br>
+
+
+
+
+</body>
