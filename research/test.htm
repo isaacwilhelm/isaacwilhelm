@@ -46,26 +46,52 @@
       });
     </script>
 
+
+  
     <style>
         /* Hide publication lists by default */
         .publication-list {
             display: none;
             margin-top: 10px;
+            margin-left: 20px; /* Indent the list */
         }
+
         /* Style the buttons */
         button {
-            margin: 5px;
+            margin: 5px 0;
+            display: block;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            width: 200px; /* Adjust as needed */
+            text-align: left;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for active (highlighted) button */
+        .active-button {
+            background-color: #0056b3;
+            color: #FFFFFF;
+            font-weight: bold;
         }
     </style>
     <script>
-        function showPublications(listId) {
-            // Hide all publication lists
-            var lists = document.getElementsByClassName('publication-list');
-            for (var i = 0; i < lists.length; i++) {
-                lists[i].style.display = 'none';
+        function togglePublications(listId, button) {
+            var list = document.getElementById(listId);
+            if (list.style.display === 'block') {
+                list.style.display = 'none';
+                button.classList.remove('active-button');
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                list.style.display = 'block';
+                button.classList.add('active-button');
+                button.setAttribute('aria-expanded', 'true');
             }
-            // Display the selected publication list
-            document.getElementById(listId).style.display = 'block';
         }
     </script>
 
@@ -113,30 +139,46 @@
 <div class="header">Articles by Subfield</div>
 
 <div class="summary">
-    <!-- Buttons to select subfields -->
-    <button onclick="showPublications('subfield1')">Subfield 1</button>
-    <button onclick="showPublications('subfield2')">Subfield 2</button>
-
-    <!-- Publication list for Subfield 1 -->
-    <div id="subfield1" class="publication-list">
-        <h2>Subfield 1 Publications</h2>
-        <ul>
-            <li>Publication A in Subfield 1</li>
-            <li>Publication B in Subfield 1</li>
-            <!-- Add more publications as needed -->
-        </ul>
+    <!-- Subfield 1 -->
+    <div>
+        <button aria-controls="subfield1" aria-expanded="false" onclick="togglePublications('subfield1', this)">Subfield 1</button>
+        <div id="subfield1" class="publication-list">
+            <h2>Subfield 1 Publications</h2>
+            <ul>
+                <li>Publication A in Subfield 1</li>
+                <li>Publication B in Subfield 1</li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </div>
     </div>
 
-    <!-- Publication list for Subfield 2 -->
-    <div id="subfield2" class="publication-list">
-        <h2>Subfield 2 Publications</h2>
-        <ul>
-            <li>Publication X in Subfield 2</li>
-            <li>Publication Y in Subfield 2</li>
-            <!-- Add more publications as needed -->
-        </ul>
+    <!-- Subfield 2 -->
+    <div>
+        <button aria-controls="subfield2" aria-expanded="false" onclick="togglePublications('subfield2', this)">Subfield 2</button>
+        <div id="subfield2" class="publication-list">
+            <h2>Subfield 2 Publications</h2>
+            <ul>
+                <li>Publication X in Subfield 2</li>
+                <li>Publication Y in Subfield 2</li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </div>
     </div>
-  </div>
+
+    <!-- Subfield 3 -->
+    <div>
+        <button aria-controls="subfield3" aria-expanded="false" onclick="togglePublications('subfield3', this)">Subfield 3</button>
+        <div id="subfield3" class="publication-list">
+            <h2>Subfield 3 Publications</h2>
+            <ul>
+                <li>Publication M in Subfield 3</li>
+                <li>Publication N in Subfield 3</li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </div>
+    </div>
+
+</div>
 
   
 
