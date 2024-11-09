@@ -61,8 +61,8 @@
             margin: 5px 0;
             display: block;
             padding: 10px;
-            background-color: #007BFF;
-            color: #FFFFFF;
+            background-color: #be5100;
+            color: #982906;
             border: none;
             cursor: pointer;
             width: 200px; /* Adjust as needed */
@@ -70,14 +70,14 @@
         }
 
         button:hover {
-            background-color: #0056b3;
+          background-color: #be5100;
+          color: white;
         }
 
         /* Style for active (highlighted) button */
         .active-button {
-            background-color: #0056b3;
-            color: #FFFFFF;
-            font-weight: bold;
+            background-color: #be5100;
+            color: white;
         }
     </style>
     <script>
@@ -139,11 +139,10 @@
 <div class="header">Articles by Subfield</div>
 
 <div class="summary">
-    <!-- Subfield 1 -->
+    <!-- Metaphysics -->
     <div>
         <button aria-controls="subfield1" aria-expanded="false" onclick="togglePublications('subfield1', this)">Subfield 1</button>
         <div id="subfield1" class="publication-list">
-            <h2>Subfield 1 Publications</h2>
             <ul>
                 <li>Publication A in Subfield 1</li>
                 <li>Publication B in Subfield 1</li>
