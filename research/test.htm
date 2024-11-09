@@ -46,6 +46,31 @@
       });
     </script>
 
+    <style>
+        /* Hide publication lists by default */
+        .publication-list {
+            display: none;
+            margin-top: 10px;
+        }
+        /* Style the buttons */
+        button {
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function showPublications(listId) {
+            // Hide all publication lists
+            var lists = document.getElementsByClassName('publication-list');
+            for (var i = 0; i < lists.length; i++) {
+                lists[i].style.display = 'none';
+            }
+            // Display the selected publication list
+            document.getElementById(listId).style.display = 'block';
+        }
+    </script>
+
+  
+  
   <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
     <script type="text/javascript">
       $(document).ready(function() {
@@ -85,62 +110,31 @@
 
 <hr>
 
-<div class="header">Articles</div>
+<div class="header">Articles by Subfield</div>
 
-<div class="summary">
-  <button onclick="myFunction()">Metaphysics</button>
-  <div id="metaphysicsbuttonreveal" style="display: none">
-    <div style="height: 20px;"></div>
-    <div class="confschlist"> 
-      <ol>
-        <li><a style="text-decoration:none;" href="https://link.springer.com/article/10.1007/s10670-023-00720-4" target="_blank">The Value of Naturalness</a> (forthcoming). <em>Erkenntnis</em>.</li>
-          <ul class="dash">
-            <li>I explore three different accounts of why it is more objectively valuable theorize in terms of natural properties than to theorize in terms of non-natural properties.</li>
-          </ul>
-        <li><a style="text-decoration:none;" href="https://www.tandfonline.com/eprint/MTQEKCACTF7JRDSRYSEE/full?target=10.1080/00048402.2022.2106498" target="_blank">Worlds are Pluralities</a> (2024). <em>Australasian Journal of Philosophy</em> 102: 221-231.</li>
-          <ul class="dash">
-            <li>I argue that possible worlds are pluralities of sentences in an extremely large language, and I raise a cardinality problem for views which identify worlds with sets rather than pluralities.</li>
-          </ul>
-      </ol>
+    <!-- Buttons to select subfields -->
+    <button onclick="showPublications('subfield1')">Subfield 1</button>
+    <button onclick="showPublications('subfield2')">Subfield 2</button>
+
+    <!-- Publication list for Subfield 1 -->
+    <div id="subfield1" class="publication-list">
+        <h2>Subfield 1 Publications</h2>
+        <ul>
+            <li>Publication A in Subfield 1</li>
+            <li>Publication B in Subfield 1</li>
+            <!-- Add more publications as needed -->
+        </ul>
     </div>
-  </div>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("metaphysicsbuttonreveal");
-      if (x.style.display === "none") {
-      x.style.display = "block";
-      } else {
-      x.style.display = "none";
-      }
-    }
-  </script>
-  <button onclick="myFunction()">Phil Science/Physics</button>
-  <div id="philsciphysbuttonreveal" style="display: none">
-    <div style="height: 20px;"></div>
-    <div class="confschlist"> 
-      <ol>
-        <li><a style="text-decoration:none;" href="https://www.mdpi.com/2624-960X/5/1/21" target="_blank">Centering the Born Rule</a> (2023). <em>Quantum Reports</em> 5: 311-324.</li>
-          <ul class="dash">
-            <li>I continue developing the centered Everett interpretation of quantum theory, and I defend it against several objections.</li>
-          </ul>
-        <li><a style="text-decoration:none;" href="https://link.springer.com/article/10.1007/s44204-023-00098-8" target="_blank">Constitution, Evidence, and an Argument for Realism</a> (2023). <em>Asian Journal of Philosophy</em> 46: 1-10.</li>
-          <ul class="dash">
-            <li>I make three comments about Bird's <em>Knowing Science</em>: one concerning science's goals, one criticizing an epistemic principle, and one proposing a new version of the No Miracles Argument for realism.</li>
-          </ul>
-      </ol>
+
+    <!-- Publication list for Subfield 2 -->
+    <div id="subfield2" class="publication-list">
+        <h2>Subfield 2 Publications</h2>
+        <ul>
+            <li>Publication X in Subfield 2</li>
+            <li>Publication Y in Subfield 2</li>
+            <!-- Add more publications as needed -->
+        </ul>
     </div>
-  </div>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("philsciphysbuttonreveal");
-      if (x.style.display === "none") {
-      x.style.display = "block";
-      } else {
-      x.style.display = "none";
-      }
-    }
-  </script>
-</div>
 
 
   
