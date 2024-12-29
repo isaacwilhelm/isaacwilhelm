@@ -151,6 +151,7 @@ a:visited {
   text-align: left;
 }
 
+/* Parenthetical next to header on research page, in the section called `Articles by Research Project' */
 .container {
   width: 900px;
   margin: 0 auto;
@@ -371,6 +372,11 @@ ol, li {
 .flexkathypic {
   padding-top: 20px;
   margin: 0;
+}
+
+.container {
+  flex-direction: column;    /* Switch to vertical stacking */
+  align-items: flex-start;   /* Align each item to the left, for instance */
 }
 
 }
