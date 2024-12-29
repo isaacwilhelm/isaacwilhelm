@@ -374,11 +374,6 @@ ol, li {
   margin: 0;
 }
 
-.container {
-  flex-direction: column;    /* Switch to vertical stacking */
-  align-items: flex-start;   /* Align each item to the left, for instance */
-}
-
 }
 
 
@@ -394,6 +389,12 @@ ol, li {
 }
 .flexbiodescription {
   padding: 0;
+}
+
+/* For adjusting size of container once web page window gets smaller */
+.container {
+  flex-direction: column;    /* Switch to vertical stacking */
+  align-items: flex-start;   /* Align each item to the left, for instance */
 }
 
 }
