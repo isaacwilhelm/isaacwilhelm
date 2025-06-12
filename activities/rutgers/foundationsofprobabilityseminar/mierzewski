@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Probing the qualitative-quantitative divide in probability logics</div>
+<div class="summary">Krzysztof Mierzewski (CMU)</div>
+
+<br>
+  
+<div class="summary">Several notable approaches to probability, going back to at least Keynes (1921), de Finetti (1937), and Koopman (1940), assign a special importance to qualitative, comparative judgments of probability (“event A is at least as probable as event B”). The difference between qualitative and explicitly quantitative probabilistic reasoning is intuitive, and one can readily identify paradigmatic instances of each. It is less clear, however, whether there are any natural structural features that track the difference between inference involving comparative probability judgments on the one hand, and explicitly numerical probabilistic reasoning on the other. Are there any salient dividing lines that can help us understand the relationship between the two, as well as classify intermediate forms of inference lying in between the two extremes? In this talk, based on joint work with Duligur Ibeling, Thomas Icard, and Milan Mosse, I will explore this question from the perspective of probability logics. Probability logics can represent probabilistic reasoning at different levels of grain, ranging from the more "qualitative" logic of purely comparative probability to explicitly "quantitative" languages involving arbitrary polynomials over probability terms. As I will explain, when classifying these systems in terms of expressivity, computational complexity, and axiomatisation, what emerges as a robust dividing line is the distinction between systems that encode merely additive reasoning from those that encode additive and multiplicative reasoning. I will show that this distinction tracks a divide in computational complexity (NP-complete vs. ETR-complete) and in the kind of algebraic tools needed for a complete axiomatisation (hyperplane separation theorems vs. real algebraic geometry). I will present new completeness results and a result on the non-finite-axiomatisability of comparative probability, and I will conclude with some overlooked issues concerning the axiomatisation of comparative conditional probability. One lesson from this investigation is that, for the multiplicative probability logics as well as the additive ones, the paradigmatically "qualitative" systems are neither simpler in terms of computational complexity nor in terms of axiomatisation, while losing in expressive power to their explicitly numerical counterparts.</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
