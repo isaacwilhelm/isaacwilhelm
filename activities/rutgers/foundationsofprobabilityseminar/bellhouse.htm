@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">The Flawed Genius of William Playfair</div>
+<div class="summary">David Bellhouse (Western)</div>
+
+<br>
+  
+<div class="summary">Variously as a statistician, economist, engineer, banker, scam artist, and political propagandist, among other activities. He began with much promise working for Boulton and Watt of steam engine fame, saw many ups and downs throughout his career that ranged from being moderately well off to bankruptcy and imprisonment, and ended his life in poverty. His flaw was his inability to deal with his personal and professional finances. His lasting contributions are in statistics, where he is known as the father of statistical graphics, and in economics, where he is known for his contributions to the first posthumous edition of Adam Smith’s "Wealth of Nations". In this talk, I will focus on Playfair’s graphs, which were motivated by political and economic issues of his day. I will also interweave biographical information with a discussion of the graphs. Playfair invented time series line graphs, as well as the now ubiquitous bar chart and the pie chart. He also introduced innovative ways to display multivariate data. Many of the graphical elements that Playfair used are now standard elements in statistical graphics today. For example, Playfair pioneered the use of colour in his graphs, when colour was rarely used in the printing process. I have left out spying for the British government as one of Playfair’s activities. I will address this claim as part of the talk.</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
