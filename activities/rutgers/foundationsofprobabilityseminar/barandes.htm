@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Probabilistic Systems and the Stochastic-Quantum Theorem</div>
+<div class="summary">Jacob Barandes (Harvard)</div>
+
+<br>
+  
+<div class="summary">On the one hand, scientists across disciplines act as though various kinds of phenomena physically occur, perhaps according to probabilistic laws. On the other hand, textbook quantum theory is an instrumentalist recipe whose only predictions refer to measurement outcomes, measurement-outcome probabilities, and statistical averages of measurement outcomes over measurement-outcome probabilities. The conceptual gap between these two pictures makes it difficult to see how to reconcile them. In this talk, I will present a new theorem that establishes a precise equivalence between quantum theory and a highly general class of stochastic processes, called generalized stochastic systems, that are defined on configuration spaces rather than on Hilbert spaces. From a foundational perspective, some of the mysterious features of quantum theory – including Hilbert spaces over the complex numbers, linear-unitary time evolution, the Born rule, interference, and noncommutativity – then become the output of a theorem based on the simpler and more transparent premises of ordinary probability theory. From a somewhat more practical perspective, the stochastic-quantum theorem leads to a new formulation of quantum theory, alongside the Hilbert-space, path-integral, and phase-space formulations, potentially opens up new methods for using quantum computers to simulate stochastic processes beyond the Markov approximation, and may have implications for how we think about quantum gravity.</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
