@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Good Guesses: The Conjunction Fallacy and the Tradeoff between Accuracy and Informativity</div>
+<div class="summary">Kevin Dorst (MIT)</div>
+
+<br>
+  
+<div class="summary">The conjunction fallacy is the well-documented empirical finding that subjects sometimes rate a conjunction A&B as more probable than one of its conjuncts, A. Most explanations appeal in some way to the fact that B has a high probability. But Tentori et al. (2013) have recently challenged such approaches, reporting experiments which find that (1) when B is confirmed by relevant evidence despite having low probability, the fallacy is common, and (2) when B has a high probability but has not been confirmed by relevant evidence, the fallacy is less common. They conclude that degree of confirmation, rather than probability, is the central determinant of the conjunction fallacy. In this paper, we address a confound in these experiments: Tentori et al. (2013) failed to control for the fact that their (1)-situations make B conversationally relevant, while their (2)-situations do not. Hence their results are consistent with the hypothesis that conversationally relevant high probability is an important driver of the conjunction fallacy. Inspired by recent theoretical work that appeals to conversational relevance to explain the conjunction fallacy, we report on two experiments that control for this issue by making B relevant without changing its degree of probability or confirmation. We find that doing so increases the rate of the fallacy in (2)-situations, and leads to comparable fallacy-rates as (1)-situations. This suggests that (non-probabilistic) conversational relevance indeed plays a role in the conjunction fallacy, and paves the way toward further work on the interplay between relevance and confirmation.</div>
+
+<br>
+<br>
+
+
+
+
+</body>
 
