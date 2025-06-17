@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Why the Concept of Statistical Inference Is Incoherent, and Why We Still Love It</div>
+<div class="summary">Michael Acree (UCSF)</div>
+
+<br>
+  
+<div class="summary">By the 17th century the Italian insurance industry was coming to use the word probability to refer to informal assessments of risk, and Pascal and Fermat soon began the calculus of gambling.  But the latter never used the word probability, framing their inquiries instead in terms of expectation—the focus of insurance. At the end of the 17th century Bernoulli tried to bring these two lines together. A revolution in the historiography of probability occurred in 1978 with a paper by Shafer. Virtually all attention to Bernoulli’s Ars Conjectandi had focused only on the closing pages, where he famously proved the weak law of large numbers; Shafer was the first to notice, at least since the 18th century, Bernoulli’s struggle to integrate the two concepts.  He also attributes the success of Bernoulli’s dualistic concept to Bernoulli’s widow and son having withheld publication for 8 years following his death, and to eulogies having created the impression that Bernoulli had succeeded in his ambition of applying the calculus of chances to “civil, moral, and economic matters.” Lambert improved Bernoulli’s formula for the combination of probabilities 50 years later, but did not address the question of a metric for epistemic probability, or the meaningfulness of combining them with chances. I suggest that no such meaningful combination is possible.  But Bernoulli’s attempted integration promised that all uncertainty could be quantified, and the promise was philosophical heroin to the world of Hume. Laplace’s Rule of Succession was of no use to scientists, but was beloved of philosophers for over a century. Criticisms of it on metaphysical grounds led to Fisher’s approach, 150 years later, based on intervening developments in astronomy. His theory still desperately straddled the tension between aleatory and epistemic probabilities. Jerzy Neyman set about to purify Fisher’s theory of the epistemic elements, and was led to scrap all reference to inference, leaving him with a theory of statistical decision making, with principal application to quality control in manufacturing. Bayesians, meanwhile, were eager to retain epistemic reference, but wanted epistemic probabilities to be measured on the same scale as aleatory probabilities. That left them with, among other problems, the inability to represent ignorance meaningfully. Efforts to adhere consistently to the requirements of epistemic probability impel us to abandon reference to statistics, as efforts to adhere to the requirements of an aleatory conception impel us to abandon reference to inference.  Statistics and inference, I conclude, have really nothing more to do with each other than do ethics and trigonometry.</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
