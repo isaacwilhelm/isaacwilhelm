@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Game-theoretic probability in physics</div>
+<div class="mainlist">
+  <ol>
+    <li>Marshall Abrams, philosophy (Alabama).</li>
+    <li>Ruobin Gong, statistics (Rutgers).</li>
+    <li>Alistair Wilson, philosophy (Birmingham).</li>
+    <li>Harry Crane, statistics (Rutgers).</li>
+  <ol>
+</div>
+
+<br>
+  
+<div class="summary">Historically, the probability calculus began with repeated trials: throws of a fair die, etc. Independent and identically distributed (iid) random variables still populate elementary textbooks, but most statistical models permit variation and dependence in probabilities.  Already in 1816, Pierre Simon Laplace explained that nature does not follow any constant probability law; its error laws vary with the nature of measurement instruments and with all the circumstances that accompany them. In 1960, Jerzy Neyman explained that scientific applications had moved into a phase of dynamic indeterminism, in which stochastic processes replace iid models.</div>
+
+<div class="summary">Statisticians who call themselves “frequentists” have proposed two competing principles to support the inferences about parameters in stochastic processes and other complex probability models. First, the repeated sampling principle: assess statistical procedures by their behavior in hypothetical repetitions under the same conditions. Second, Cournot’s principle: justify inferences by statements to which the model gives high probability. Cox and Hinkley coined the name “repeated sampling principle” in 1974.  The name “Cournot’s principle” was first current in the 1950s.  But both ideas are much older. When interpreted as pragmatic instructions, the two principles are more or less equivalent.  But they can also be interpreted as philosophical justifications – even as explanations of the meaning of probability models – and then they seem very different. Questions for the panel include the following.</div>
+
+<br>
+
+<div class="mainlist">
+  <ol>
+    <li>The repeated sampling principle can be taken as saying that the meaning of a probability measure lies in the assumption that salient probabilities and expected values given by the measure will be replicated by frequencies and averages in hypothetical repetitions.  Is this a frequentist interpretation of probability?</li>
+    <li>Similarly, Cournot’s principle says that the meaning of a probability measure lies in the assumption that salient events with probability close to one will happen.  Is this a frequentist interpretation of probability?</li>
+    <li>From a philosophical perspective, do these two interpretations of probability differ?</li>
+    <li>The game-theoretic foundation for probability generalizes Cournot’s principle to the case where nonstochastic explanatory or decision variables may be determined in the course of observing the data and be influenced by the values of earlier variables.  Here the principle says that a salient betting strategy using the probabilities for the stochastic variables will not multiply its capital by a large factor. Is this principle frequentist?</li>
+  </ol>
+</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
