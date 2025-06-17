@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Are probability distributions for potential responses real and necessary for causal inference?</div>
+<div class="mainlist">
+  <ol>
+    <li>Philip Dawid, statistics (Cambridge).
+    <li>Ilya Shpitser, computer science (Johns Hopkins).</li>
+    <li>Thomas Richardson, statistics (Washington).</li>
+    <li>Sylvia Wenmackers, philosophy (KU Leuven).</li>
+  <ol>
+</div>
+
+<br>
+  
+<div class="summary">Many statistical models hypothesize a joint probability distribution for an individual’s potential responses to different treatments even when only one treatment can be given. These models include structural equation and functional models as well as the potential response model popularized by Don Rubin in the 1970s. For more than two decades, Phil Dawid has advocated the more parsimonious decision-theoretic approach, in which a probability distribution for the individual’s response is given conditional on each possible treatment but no joint distribution is hypothesized.</div>
+
+<div class="summary">Joint distributions for potential responses allow us to work fully within the familiar framework of probability measures. Their disadvantage, Dawid argues, is the confusion introduced by the introduction of meaningless assumptions (such as “treatment-unit additivity assumption”) and meaningless quantities (such the variance of the difference between an individual’s responses to two possible treatments). Discussion of confounding also becomes confusing in the context of probability distributions for unobservable and meaningless quantities. Dawid’s solution is to generalize the theory of conditional independence and DAGs from probability measures to decision models.</div>
+
+<div class="summary">Dawid and other authors distinguish between studying the effects of causes (causal investigation as a guide to action) and studying the causes of effects (assignment of responsibility for outcomes already observed).  In the latter case, Dawid is more open to “counterfactual” questions that the joint distribution of potential outcomes might help us answer, such as “given what happened when Mr. Defendant did A, what would likely have happened if he had done B instead.” Questions for the panel include the following.</div>
+
+<br>
+
+<div class="mainlist">
+  <ol>
+    <li>Dawid’s decision-theoretic language for studying the effects of causes has not been widely used in statistical practice.  What are the obstacles to its adoption?</li>
+    <li>Is Dawid’s framework more difficult to use with observational studies than with experimental studies?</li>
+    <li>Do standard interpretations of probability (for example, the six interpretations Alan H&aacute;jek discusses in the Stanford Encyclopedia of Philosophy) generalize from probability measures to Dawid’s decision models?</li>
+    <li>Why do some statisticians find counterfactuals useful?</li>
+    <li>Can we assign responsibility for outcomes without using counterfactuals? (See Glenn Shafer (2001): Causality and responsibility, Cardozo Law Review 22:101-123.)</li>
+  </ol>
+</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
