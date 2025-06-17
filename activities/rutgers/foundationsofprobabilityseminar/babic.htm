@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Inference, Optimal Stopping and New Hypotheses</div>
+<div class="summary">Boris Babic (Toronto)</div>
+
+<br>
+  
+<div class="summary">In this project we address the Bayesian problem of new hypotheses and attempt to reframe normative constraints for rational inference in situations characterized by substantial unawareness about the possible outcomes. In particular, we first argue that we can meaningfully distinguish two types of learning scenarios: problem framing and problem solving. Problem solving is the sort of thing we do when we have quite a bit of information about a problem—enough to identify the relevant outcomes, and sometimes to even put some meaningful prior probabilities on them. Problem framing is what happens when we encounter an issue for more or less the first time. For example, one steps into an organic chemistry class without any background knowledge of the underlying subject matter. In cases like these, it’s unreasonable to expect such an agent to be aware of what she might learn, let alone to place probabilities on possible learning outcomes. Problem framing, we will suggest, is the “hard” problem of learning. Problem solving is “easy.” And while Bayesianism (or, more specifically, traditional Bayesian confirmation theory in philosophy of science) is often pitched as a theory of rational learning, it is a persuasive normative theory of problem solving only. For framing problems, we need to look elsewhere. We will propose a slightly different set of normative criteria by drawing on principles of optimal stopping. Instead of having an agent do something they are not in a position to do (place probabilities on unanticipated hypotheses), we will have them instead focus on more tractable aspects of the learning situation (e.g., evaluate the importance of the problem, the upside if it proves fruitful, the downside if it is a waste of time). This will yield different normative criteria for rational inference. We will also consider whether this is better thought of as a non-Bayesian approach to learning, or just a reframing of the traditional Bayesian paradigm.</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
