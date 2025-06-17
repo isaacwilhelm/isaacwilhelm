@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Game-theoretic probability in physics</div>
+<div class="mainlist">
+  <ull>
+    <li>Glenn Shafer, business and statistics (Rutgers).</li>
+    <li>Dustin Lazarovici, philosophy (Lausanne).</li>
+    <li>Leah Henderson, philosophy (Groningen).</li>
+    <li>Eddy Keming Chen, philosophy (UCSD).</li>
+  </ul>
+</div>
+
+<br>
+  
+<div class="summary">In measure-theoretic probability, expected values (prices) may change through time, but the way in which they change is set in advance by a comprehensive probability measure.  Game-theoretic probability generalizes this by introducing players who may take actions and set prices as a betting game proceeds.  In the case of discrete time, this means that a probability tree is replaced by a decision tree.  Statistical testing of the prices is still possible.  But instead of testing a comprehensive probability measure by checking that a simple event of small probability specified in advance does not happen (Cournot’s principle), we test the prices, or the forecaster who sets them, by checking that a simple betting strategy specified in advance does not multiply its capital by a large factor.  See Glenn Shafer’s “Testing by betting” (2021).</div>
+
+<div class="summary">Because it provides explicitly for a decision maker, game-theoretic probability accommodates John von Neumann’s axioms for quantum mechanics in a straightforward way, as explained on pp. 189-191 of Shafer and Vovk’s 2001 book.  As further explained on pp. 216-217 of their 2019 book, it also allows a programmer to test whether a quantum computer is performing correctly.</div>
+
+<div class="summary">Gurevich and Vovk have argued that the game-theoretic formulation helps take the mystery out of the role of negative probabilities in Wigner’s quasi-probability distribution.  The mystery dissolves because the distribution is nothing more than a rule that tells a forecaster how to set prices.</div>
+
+<div class="summary">Advocates of Cournot’s principle in statistical mechanics have pointed out that the Gibbs distribution is needed only to rule out events to which it gives probability near zero (see, e.g., Goldstein et al. 2020).  Any measure equivalent in the sense of absolute continuity would do the same job; the Gibbs distribution is distinguished from the others mainly by its implausible assumption of particles’ initial independence of each other.  Ken Huira (2021) has argued that the game-theoretic formulation can again provide clarification. The distribution does not “generate” outcomes; it merely sets prices. Questions for the panel include the following.</div>
+
+<br>
+
+<div class="mainlist">
+  <ull>
+    <li>Is the game-theoretic formulation adequate for understanding probability in physics?</li>
+    <li>Is the game-theoretic formulation philosophically acceptable to most theoretical physicists?  If not, is this because they want a generative and creative probability, not merely a probability with predictive value?</li>
+    <li>In the modern model for multiple regression, introduced by R. A. Fisher in 1922, explanatory variables that are set by an experimenter are treated as constants (Aldrich 2005). Does a Bohmian account of a programmer’s statistical test of a quantum computer require a similar device?</li>
+  </ul>
+</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
