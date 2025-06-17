@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Exploitability and accuracy</div>
+<div class="summary">Kevin Blackwell (Bristol)</div>
+
+<br>
+  
+<div class="summary">I’ll begin with a very basic, very fast summary of the approach for assessing the accuracy of sets of desirable gambles being developed by Jason Konek; the notions of accuracy that I will discuss in this talk are very much in the same vein, although I will flag some important differences. (This introduction will also include an even briefer introduction to sets of desirable gambles, for anyone who isn’t familiar with them.) Next, I motivate an interpretation of the “Falsity” score: how exploitable (by better-informed agents) does an agent’s credal state render them? I will then go through the assumptions and results of an approach to accuracy that I termed “Select-A-Size Accuracy”, which for two-dimensional sets of desirable gambles (gambles on a binary partition), provides exactly what we want: a family of accuracy scores such that (1) according to every member of this family, every incoherent set of desirable gambles is accuracy-dominated; and (2) for every coherent set of desirable gambles, there is some element of this family which renders that set of desirable gambles not merely accuracy-undominated but Imprecisely Immodest...But this approach doesn’t generalize to higher dimensions; I briefly discuss why that is. Finally, I’ll present some early developments of a game-theoretic approach to accuracy which is closely related to the exploitability notion used in constructing Select-A-Size Accuracy. I will also gesture in the direction of, but not really discuss, another development of this same exploitability notion: Arthur Van Camp’s accuracy order.</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
