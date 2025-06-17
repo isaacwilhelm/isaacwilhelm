@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Game-theoretic probability in physics</div>
+<div class="mainlist">
+  <ol>
+    <li>Isaac Wilhelm, philosophy (NUS).</li>
+    <li>Ryan Martin, statistics (NC State).</li>
+    <li>Alan H&aacute;jek, philosophy (ANU).</li>
+    <li>Snow Xueyin Zhang, philosophy (NYU).</li>
+  <ol>
+</div>
+
+<br>
+  
+<div class="summary">Following his scholastic predecessors, Jacob Bernoulli equated high probability with practical certainty. Theoretical and applied probabilists and statisticians have done the same ever since. In 1843, Antoine Augustin Cournot suggested that this is the only way that mathematical probability can be connected with phenomena. In 1910, Aleksandr Aleksandrov Chuprov called the equation of high probability with practical certainty Cournot’s lemma. In the early 1940s, Émile Borel called it the only law of chance. In 1949, Maurice Fréchet called it Cournot’s principle.</div>
+
+<div class="summary">The Bernoullian (non-Bayesian) statistician uses Cournot’s principle in three ways. First, having hypothesized a statistical model (which may be a single probability measure or a parametric or nonparametric family of probability measures), she tests it by checking that various key events to which it assigns probability close to one happen. Second, if the model passes these goodness-of-fit tests, she applies Cournot’s principle again to get a confidence interval that narrows the model down, essentially to a single probability measure in the ideal case. Third, she uses the probabilities to make decisions. Cournot’s principle supports this, because it implies that the average result of a large number of such decisions will be close to optimal. When the model is complex, only some events of high probability can happen. In fact, what does happen, described in detail, will have negligible or zero probability. (This is the fearsome lottery paradox.) So careful statements of Cournot’s principle always limit the events close to zero or one that are taken into consideration. Borel insisted that these events be “remarkable in some respect” and specified in advance.  Richard von Mises, Abraham Wald, Jean Ville, and Alonzo Church, working in the idealization of an infinite number of trials, limited the events by requiring that they be definable in some language or computable in some sense.  Andrei Kolmogorov brought this back to finite reality by giving a coherent definition of complexity (and simplicity) for elements of finite sets. The model predicts only those events of high probability that are simply described.</div>
+
+<div class="summary">The best-system interpretation of objective probability goes back to the work of David Lewis in the 1990s.  Lewis proposed that a system of probabilities should be considered objective if it provides the best description of our world, where “best” involves balancing simplicity, strength (how much is predicted), and fit (how high a probability is given to what happens). Critics have pointed out that this balance has remained nebulous. Questions for the panel include the following.</div>
+
+<br>
+
+<div class="mainlist">
+  <ol>
+    <li>Should Cournot’s principle and Lewis’s best-system criterion be thought of as competing definitions of objective probability?</li>
+    <li>What are the advantages and disadvantages of Cournot’s principle, compared with Lewis’s high probability, as a measure of the fit of a probabilistic theory to the world?</li>
+    <li>When, if ever, is Lewis’s notion of “perfectly natural” properties and relations needed for Cournot’s principle?</li>
+    <li>Cournot’s principle is vague; we must decide how high a probability is needed for practical certainty and which events with high probability are sufficiently simple or remarkable.  Borel argued that this indeterminacy reflects the nature and diversity of probability’s applications. Do you agree?</li>
+  </ol>
+</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
