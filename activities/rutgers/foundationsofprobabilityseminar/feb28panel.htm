@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">Game-theoretic probability in physics</div>
+<div class="mainlist">
+  <ull>
+    <li>Alex Meehan, philosophy (Yale).</li>
+    <li>Monique Jeanblanc, mathematics (Evry).</li>
+    <li>Barry Loewer, philosophy (Rutgers).</li>
+    <li>Tahir Choulli, mathematics (Alberta).</li>
+  </ul>
+</div>
+
+<br>
+  
+<div class="summary">In his 1843 book on probability, Cournot argued that objective probabilities can be consistent with God’s omniscience.  As he saw the matter, truly objective probabilities are the probabilities of a superior intelligence at the upper limit of what might be achieved by human-like intelligence.  As he explained,</div>
+ 
+<div class="summary">Surely the word chance designates not a substantial cause, but an idea: the idea of the combination of many systems of causes or facts that develop, each in its own series, each independently of the others. An intelligence superior to man would differ from man only in erring less often or not at all in the use of this idea. It would not be liable to consider series independent when they actually influence each other in the causal order; inversely, it would not imagine a dependence between causes that are actually independent. It would distinguish with greater reliability, or even with rigorous exactness, the part due to chance in the evolution of successive phenomena. . . . In a word, it would push farther and apply better the science of those mathematical relations, all tied to the idea of chance, that become laws of nature in the order of phenomena.</div>
+
+<div class="summary">In the 1970s and 1980s, the consistency of probabilities at different levels of knowledge was studied within measure-theoretic probability by Paul-André Meyer’s Strasbourg seminar.  One question studied was whether the semimartingale property is preserved when a filtration is enlarged.  A discrete-time process S is a semimartingale with respect to a filtration F if it is the sum of two processes, say S = A + B, where (i) <span style="font-style: italic;">A</span> is predictable with respect to <span style="font-style: italic;">F</span>, in the sense that an observer whose growing knowledge is represented by <span style="font-style: italic;">F</span> already knows the value of <span style="font-style: italic;">A<sub>t+1</sub></span> at time <span style="font-style: italic;">t</span>, and (ii) <span style="font-style: italic;">B</span> is a martingale, meaning that this observer assigns expected value zero to <span style="font-style: italic;">B</span>’s gain on the next step: <span style="font-style: italic;">E(B<sub>t+1</sub> | F<sub>t</sub>) = B<sub>t</sub></span>.</div>
+
+<div class="summary">An observer whose knowledge is represented by a larger filtration F* knows more and so can predict more, but if the remaining unpredictable part is still a martingale, then the probabilities with respect to F can be considered just as objective as those with respect to F*.  In discrete time, the semimartingale property is always preserved, but in continuous time regularity conditions are needed. The most extreme enlargement of any filtration is the filtration that knows the world’s entire trajectory at the outset.  In Cournot’s picture, this would be God’s filtration.  Every process is predictable and hence a semimartingale with respect to this filtration. In recent decades, the enlargement of filtrations has been used to study insider trading and default risk in mathematical finance. The philosophers Barry Loewer and David Albert, inspired largely by statistical mechanics, have proposed a picture roughly similar to Cournot’s, in which the superior intelligence is represented by “standard Lebesgue measure over the physically possible microstates” consistent with a description of the universe right after the Big Bang, and God is replaced by David Lewis’s Humean mosaic.  Loewer has called this the “Mentaculus vision”. Questions for the panel include the following.</div>
+
+<br>
+
+<div class="mainlist">
+  <ull>
+    <li>The models used by statisticians are accessible to their actual resources for representation and computation.  To what extent does Cournot’s (or Loewer’s) picture provide an objective foundation for these models?</li>
+    <li>  A filtration <span style="font-style: italic;">F*</span> is an enlargement of <span style="font-style: italic;">F</span> when the sigma-algebra <span style="font-style: italic;">F*<sub>t</sub></span> contains the sigma-algebra <span style="font-style: italic;">F<sub>t</sub></span> for each time <span style="font-style: italic;">t</span>. Can we suppose that the superior intelligence’s filtration is an enlargement of a data scientist’s plan for making observations? Of a data scientist’s analysis of data already obtained?</li>
+    <li>Is there a filtration for the scientist in the Mentaculus vision?  (This would mean that the scientist knows in advance the trajectory of his future knowledge as a function of the world’s trajectory.)</li>
+    <li>Cournot was an outspoken opponent of Bayesian inference.  Does Bayesian uncertainty about Mentaculus take us outside the Mentaculus vision?</li>
+  </ul>
+</div>
+
+<br>
+<br>
+
+
+
+
+</body>
+
