@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159306199-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159306199-1');
+    </script>
+  
+  <!-- Defines the title which search engines can find, which appears in tabs of browsers, which gets listed in Google's display of search results for my name, etc. --> 
+    <title>Isaac Wilhelm</title>
+
+  <!-- Calls CSS file -->
+    <link rel='stylesheet' text='style/css' href='https://isaacwilhelm.com/styles.css'/>
+
+  <!-- Calls icon for tab -->
+    <link rel='icon' href='https://isaacwilhelm.com/pdfs/joshuatree.jpg'>
+
+  <!-- Defines the set of characters which can be called. -->
+    <meta charset='UTF-8'/>
+
+  <!-- I think this defines keywords which search engines can use to identify my website. --> 
+    <meta name="keywords" content="Isaac Wilhelm, philosophy, metaphysics, science, epistemology, logic, Logic for Justice, feminism">
+
+    <meta name="description" content="Professional website for Isaac Wilhelm.">
+    <meta name="author" content="Isaac Wilhelm">
+
+  <!-- This sets the viewport to make the website look good on all devices. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google host website for jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+  <!--Website Header and Navigation Bar-->  <!-- It is crucial to include `/' before `sharedcontent.html' in load. Without that, the associated function fails to find the file containing the header and navigation bar code. -->
+    <script>
+      $(document).ready(function(){    
+        $("#header").load("/sharedcontent.html #mainheader");
+        $("#navbar").load("/sharedcontent.html #navigationbar", function() {
+          $("#navbar .activities").addClass("active");
+        });
+      });
+    </script>
+
+  <!-- Code to delay loading of webpage, to avoid annoying flicker. -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("body").css("display", "none");
+      $("body").delay(150).show(0);
+      });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+  
+<hr>
+
+<div class="header">NUS Presidential Conference: Metaphysics</div>
+<div class="summary">
+  <p><u>Date</u>: May 27-29, 2027.
+  <br><u>Location</u>: TBD.
+  <br><u>Conference program</u>: TBD.</p>
+</div>
+
+<div class="summary">Speakers</div>
+<div class="mainlist">
+  <ol>
+    <li>David Builes (Princeton)</li>
+    <li>Sam Elgin (UPenn)</li>
+    <li>Veronica Gomez Sanchez (Berkeley)</li>
+    <li>Zachary Goodsell (NUS)</li>
+    <li>Nick Jones (Oxford)</li>
+    <li>Ezra Rubenstein (Berkeley)</li>
+    <li>Naomi Thompson (Bristol)</li>
+    <li>Jessica Wilson (Toronto)</li>
+    <li>Xinhe Wu (LSE)</li>
+    <li>TBD</li>
+  </ol>
+</div>
+
+<div class="smallbr"></div>
+
+<div class="summary">
+  <button onclick="myFunction()">Click for Schedule</button>
+  <div id="buttonreveal" style="display: none">
+    <div style="height: 20px;"></div>
+    <div style="padding-left: 20px;">
+      <u>May 27</u>
+    </div>
+    <div class="confschlist"> 
+      <ul>
+        <li>9:30-9:55am, coffee and refreshments.</li>
+        <li>9:55-10am, opening remarks.</li>
+        <li>10-11:30am, TBD: <em>TBD.</em></li>
+        <li>11:30–11:45am, break.</li>
+        <li>11:45am–1:15pm, TBD: <em>TBD.</em></li>
+        <li>1:15–3:00pm, lunch.</li>
+        <li>3–4:30pm, TBD: <em>TBD.</em></li>
+        <li>4:30–4:45pm, break.</li>
+        <li>4:45–6:15pm, TBD: <em>TBD.</em></li>
+        <li>7pm, dinner: TBD.</li>
+      </ul>
+    </div>
+    <div style='height: 20px;'>
+    </div>
+    <div style="padding-left: 20px;">
+      <u>May 28</u>
+    </div>
+    <div class="confschlist"> 
+      <ul>
+        <li>9:30-10am, coffee and refreshments.</li>
+        <li>10-11:30am, TBD: <em>TBD.</em></li>
+        <li>11:30–11:45am, break.</li>
+        <li>11:45am–1:15pm, TBD: <em>TBD.</em></li>
+        <li>1:15–3:00pm, lunch.</li>
+        <li>3–4:30pm, TBD: <em>TBD.</em></li>
+        <li>4:30–4:45pm, break.</li>
+        <li>4:45–6:15pm, TBD: <em>TBD.</em></li>
+        <li>7pm, dinner: TBD.</li>
+      </ul>
+    </div>
+    <div style='height: 20px;'>
+    </div>
+    <div style="padding-left: 20px;">
+      <u>May 29</u>
+    </div>
+    <div class="confschlist"> 
+      <ul>
+        <li>9:30-10am, coffee and refreshments.</li>
+        <li>10-11:30am, TBD: <em>TBD.</em></li>
+        <li>11:30–11:45am, break.</li>
+        <li>11:45am–1:15pm, TBD: <em>TBD.</em></li>
+        <li>1:15–1:20pm, closing remarks.</li>
+        <li>1:20–2pm, lunch.</li>
+        <li>2–6pm, activity: TBD.</li>
+        <li>7pm, dinner: TBD.</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("buttonreveal");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+      x.style.display = "none";
+      }
+    }
+  </script>
+</div>
+
+<div class="genericdiv">
+  <p><u>Official Discussants</u>
+  <br>TBD.</p>
+</div>
+
+<div class="genericdiv">
+  <p><u>Description</u>
+  <br>What is the world fundamentally like? How should we theorize about identity, grounding, laws of nature, and the other basic constituents of reality? Where does the mind, and our subjective experiences, fit into all this? These questions, and others like them, have received considerable attention from metaphysicians for decades. The purpose of this conference—which is part of a larger series of conferences in the philosophy department at NUS—is to bring researchers together, to facilitate discussion of these and related issues in metaphysics.
+</p>
+</div>
+
+<div class="genericdiv">
+  <p><u>Organizers</u>: Melina Loo Shi Jie (NUS) and Isaac Wilhelm (NUS).
+  <br><u>Sponsors</u>: NUS Presidential Young Professorship grant.
+  <br><u>PhilEvents Website</u>: TBD.</p>
+</div>
+
+<br>
+<br>
+
+
+
+
+</body>
